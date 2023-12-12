@@ -1,46 +1,51 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { FaFacebook, FaGithub, FaMapLocationDot } from "react-icons/fa6";
+import { FaMapLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedin, FaPhone, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import Toast from "../reUse/Toast";
+import useToast from "../reUse/useToast";
 
 const Contact = () => {
 	const form = useRef();
+	const { toastType, toastMessage, showToast, hideToast } = useToast();
 
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		// emailjs
-		// .sendForm(
-		// 	"service_at3kvap",
-		// 	// "template_rrsov4c",
-		// 	"template_du1zsn7",
-		// 	form.current,
-		// 	"AWTDDzD1prNjlGP-F"
-		// )
 		emailjs
-			.send(
+			.sendForm(
 				"service_at3kvap",
-				"template_du1zsn7",
+				"template_cmkfl3h",
 				form.current,
 				"AWTDDzD1prNjlGP-F"
 			)
 			.then(
 				(result) => {
-					console.log(result.text);
-					alert("email sent successfully");
-					e.target.reset();
+					if (result.status === 200) {
+						showToast("success", "Email sent successfully");
+						e.target.reset();
+					}
 				},
-				(error) => {
-					console.log(error.text);
-					alert("please try again");
+				(err) => {
+					showToast(
+						"success",
+						"Couldn't send email. Please try again"
+					);
 				}
 			);
 	};
 
 	return (
 		<div className="z-20 grid grid-cols-1 overflow-hidden md:grid-cols-3 rounded-sm mb-28 lg:min-w-[820px] shadow-md drop-shadow-sm">
-			<div className="bg-[#f2754c] lg:rounded-s-md ">
+			{toastType && (
+				<Toast
+					type={toastType}
+					message={toastMessage}
+					onHide={hideToast}
+				/>
+			)}
+			<div className="bg-orange-400 lg:rounded-s-md ">
 				<p className="flex justify-end px-6 pt-6 -mr-4 text-2xl font-bold text-slate-100">
 					03. Let's Get
 				</p>
@@ -63,7 +68,7 @@ const Contact = () => {
 						+8801835368886
 					</p>
 					<hr />
-					<div className="flex items-center justify-center gap-4 mt-6 text-2xl text-white lg:text-3xl">
+					{/* <div className="flex items-center justify-center gap-4 mt-6 text-2xl text-white lg:text-3xl">
 						<a
 							href="https://www.linkedin.com/in/mk-saadi-46a0aa242/"
 							target="_blank"
@@ -85,7 +90,7 @@ const Contact = () => {
 						>
 							<FaFacebook />
 						</a>
-					</div>
+					</div> */}
 				</div>
 			</div>
 
@@ -94,69 +99,38 @@ const Contact = () => {
 				onSubmit={sendEmail}
 				className="col-span-2 p-6 bg-white rounded-e-md"
 			>
-				<p className="text-2xl text-[#579981] font-bold -ml-4">
+				<p className="-ml-4 text-2xl font-bold text-orange-400">
 					In Touch
 				</p>
-				<div
-					className="form-control"
-					data-aos="fade-up"
-					data-aos-offset="200"
-					data-aos-duration="500"
-				>
-					<label className="text-[#579981] label-text font-semibold mb-2">
+				<div className="form-control">
+					<label className="mb-2 font-semibold text-orange-400 label-text">
 						Name
 					</label>
 					<input
 						type="text"
-						name="from_name"
-						className="text-slate-300 input rounded-sm bg-[#4b5154] mb-3"
+						name="to_name"
+						className="mb-3 text-white bg-gray-600 rounded-sm input"
 					/>
 				</div>
 
-				<div
-					className="form-control"
-					data-aos="fade-up"
-					data-aos-offset="200"
-					data-aos-duration="500"
-				>
-					<label className="text-[#579981] label-text font-semibold mb-2">
+				<div className="form-control">
+					<label className="mb-2 font-semibold text-orange-400 label-text">
 						Email
 					</label>
 					<input
 						type="email"
-						name="user_email"
-						className="input rounded-sm bg-[#4b5154] mb-3 text-slate-300"
+						name="from_email"
+						className="mb-3 text-white bg-gray-600 rounded-sm input"
 					/>
 				</div>
 
-				<div
-					className="form-control"
-					data-aos="fade-up"
-					data-aos-offset="200"
-					data-aos-duration="500"
-				>
-					<label className="text-[#579981] label-text font-semibold mb-2">
-						Subject
-					</label>
-					<input
-						className="text-slate-300 input rounded-sm bg-[#4b5154] mb-3"
-						type="text"
-						name="user_subject"
-					/>
-				</div>
-
-				<div
-					className="form-control"
-					data-aos="fade-up"
-					data-aos-offset="200"
-					data-aos-duration="500"
-				>
-					<label className="text-[#579981] label-text font-semibold mb-2">
+				<div className="form-control">
+					<label className="mb-2 font-semibold text-orange-400 label-text">
 						Message
 					</label>
 					<textarea
 						name="message"
-						className="textarea textarea-lg rounded-sm bg-[#4b5154] mb-3 text-sm text-slate-300"
+						className="mb-3 text-sm text-white bg-gray-600 rounded-sm textarea textarea-lg h-[100px] focus:h-[150px] duration-75"
 					/>
 				</div>
 
@@ -164,7 +138,7 @@ const Contact = () => {
 					<input
 						type="submit"
 						value="Send"
-						className="mt-2 px-4 rounded-sm border-2 duration-200 border-[#579981] hover:border-[#f2754c] text-[#f2754c] bg-transparent cursor-pointer"
+						className="mt-2 px-4 rounded-sm border-2 duration-200 border-orange-400 text-orange-400 hover:border-[#f2754c]  bg-transparent cursor-pointer hover:bg-orange-400 hover:text-white"
 					/>
 				</div>
 			</form>

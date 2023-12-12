@@ -1,5 +1,6 @@
 import pro from "../../src/assets/IMG_20221227_203719 j(2).jpg";
 import { BiSolidRightArrow } from "react-icons/bi";
+import Reveal from "react-awesome-reveal";
 
 const About = () => {
 	return (
@@ -48,7 +49,10 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<div className="relative order-1 mt-16 lg:order-2 noise">
+			<Reveal
+				triggerOnce
+				className="relative order-1 mt-16 lg:order-2 noise"
+			>
 				<img
 					src={pro}
 					alt=""
@@ -67,7 +71,7 @@ const About = () => {
 						borderRadius: "4px",
 					}}
 				></div>
-			</div>
+			</Reveal>
 		</div>
 	);
 };

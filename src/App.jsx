@@ -6,6 +6,7 @@ import "./app.css";
 import Projects from "./component/Projects";
 import About from "./component/About";
 import Intro from "./component/Intro";
+import RightNav from "./component/RightNav";
 
 function App() {
 	const aboutRef = useRef(null);
@@ -23,13 +24,18 @@ function App() {
 	};
 
 	return (
-		<div className="relative noise background">
+		<div className="relative noise background max-w-[1920px] mx-auto">
 			<Header
 				navigateToSection={navigateToSection}
 				aboutRef={aboutRef}
 				projectsRef={projectsRef}
 				contactRef={contactRef}
 			/>
+
+			<div className="fixed bottom-0 z-50 hidden left-3 md:block">
+				<RightNav />
+			</div>
+
 			<div className="max-w-[820px] mx-auto relative z-30">
 				<Intro
 					scrollToFooter={scrollToFooter}
@@ -38,7 +44,7 @@ function App() {
 
 				<section
 					ref={aboutRef}
-					className="flex items-center justify-center min-h-[70vh] mb-[300px] pt-10"
+					className="flex items-center justify-center min-h-[40vh] mb-[300px] pt-10"
 				>
 					<About />
 				</section>
@@ -69,7 +75,13 @@ function App() {
 				</footer>
 			</div>
 
-			<div className="absolute bottom-0 right-0 z-10 w-screen h-48 text-center bg-slate-800"></div>
+			<div className="absolute bottom-0 right-0 z-10 w-screen text-center bg-slate-800">
+				<p className="pt-32 pb-4 text-sm text-center text-white">
+					<span>
+						&copy;{new Date().getFullYear()} Muhiuddin Khaled
+					</span>
+				</p>
+			</div>
 		</div>
 	);
 }

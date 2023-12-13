@@ -15,36 +15,56 @@ const About = () => {
 					January 2023 and after learning for more than 6 months I am
 					ready to start working in the real world.
 				</div>
-				<p className="mt-5 mr-10 text-slate-400">
+				<p className="mt-5 mr-10 text-gray-300">
 					Some of the web technology that I'm familiar with are:
 				</p>
-				<div className="grid grid-cols-2 mx-8 mt-2 text-left text-slate-400">
+				<div className="grid grid-cols-2 mx-8 mt-2 text-left text-gray-300">
 					<div>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-[#579981] text-xs" />{" "}
-							JavaScript (ES6+)
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
+							JavaScript
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-[#579981] text-xs" />{" "}
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
 							React
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-[#579981] text-xs" />{" "}
-							Firebase
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
+							Tailwind CSS
+						</p>
+						<p className="flex items-center gap-2 text-left">
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
+							BootStrap
+						</p>
+						<p className="flex items-center gap-2 text-left">
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
+							Material UI
+						</p>
+						<p className="flex items-center gap-2 text-left">
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
+							Figma
 						</p>
 					</div>
 					<div>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-[#579981] text-xs" />{" "}
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
 							Node.js
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-[#579981] text-xs" />{" "}
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
 							MongoDB
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-[#579981] text-xs" />{" "}
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
 							Express
+						</p>
+						<p className="flex items-center gap-2 text-left">
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
+							jsonwebtoken
+						</p>
+						<p className="flex items-center gap-2 text-left">
+							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
+							Firebase
 						</p>
 					</div>
 				</div>

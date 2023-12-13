@@ -4,7 +4,7 @@ import head1 from "../assets/MK__1_-removebg-preview.png";
 const Header = ({ navigateToSection, aboutRef, projectsRef, contactRef }) => {
 	return (
 		<div
-			className="sticky top-0 z-50 flex flex-col items-center py-2 bg-white md:flex-row"
+			className="sticky top-0 z-50 flex flex-col items-center py-2 bg-white shadow-md md:flex-row"
 			// data-theme="cyberpunk"
 		>
 			<div className="flex-1 ml-8">
@@ -21,7 +21,7 @@ const Header = ({ navigateToSection, aboutRef, projectsRef, contactRef }) => {
 				<ul className="flex items-center justify-center gap-6 mr-8 font-sans text-sm font-semibold text-gray-600 md:text-base">
 					<li>
 						<button
-							className="hover:text-[#f2754c] duration-200"
+							className="duration-200 hover:text-orange-700"
 							onClick={() => navigateToSection(aboutRef)}
 						>
 							<span className="text-orange-400">01.</span> About
@@ -29,7 +29,7 @@ const Header = ({ navigateToSection, aboutRef, projectsRef, contactRef }) => {
 					</li>
 					<li>
 						<button
-							className="hover:text-[#f2754c] duration-200"
+							className="duration-200 hover:text-orange-700"
 							onClick={() => navigateToSection(projectsRef)}
 						>
 							<span className="text-orange-400">02.</span>{" "}
@@ -38,7 +38,7 @@ const Header = ({ navigateToSection, aboutRef, projectsRef, contactRef }) => {
 					</li>
 					<li>
 						<button
-							className="hover:text-[#f2754c] duration-200"
+							className="duration-200 hover:text-orange-700"
 							onClick={() => navigateToSection(contactRef)}
 						>
 							<span className="text-orange-400">03.</span> Contact

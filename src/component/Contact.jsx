@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import Toast from "../reUse/Toast";
 import useToast from "../reUse/useToast";
+import Reveal from "react-awesome-reveal";
 
 const Contact = () => {
 	const form = useRef();
@@ -102,37 +103,45 @@ const Contact = () => {
 				<p className="-ml-4 text-2xl font-bold text-orange-400">
 					In Touch
 				</p>
-				<div className="form-control">
-					<label className="mb-2 font-semibold text-orange-400 label-text">
-						Name
-					</label>
-					<input
-						type="text"
-						name="to_name"
-						className="mb-3 text-white bg-gray-600 rounded-sm input"
-					/>
-				</div>
+				<Reveal
+					cascade
+					triggerOnce
+				>
+					<div className="form-control">
+						<label className="mb-2 font-semibold text-orange-400 label-text">
+							Name
+						</label>
+						<input
+							type="text"
+							name="to_name"
+							required
+							className="mb-3 text-white bg-gray-600 rounded-sm input"
+						/>
+					</div>
 
-				<div className="form-control">
-					<label className="mb-2 font-semibold text-orange-400 label-text">
-						Email
-					</label>
-					<input
-						type="email"
-						name="from_email"
-						className="mb-3 text-white bg-gray-600 rounded-sm input"
-					/>
-				</div>
+					<div className="form-control">
+						<label className="mb-2 font-semibold text-orange-400 label-text">
+							Email
+						</label>
+						<input
+							type="email"
+							name="from_email"
+							required
+							className="mb-3 text-white bg-gray-600 rounded-sm input"
+						/>
+					</div>
 
-				<div className="form-control">
-					<label className="mb-2 font-semibold text-orange-400 label-text">
-						Message
-					</label>
-					<textarea
-						name="message"
-						className="mb-3 text-sm text-white bg-gray-600 rounded-sm textarea textarea-lg h-[100px] focus:h-[150px] duration-75"
-					/>
-				</div>
+					<div className="form-control">
+						<label className="mb-2 font-semibold text-orange-400 label-text">
+							Message
+						</label>
+						<textarea
+							name="message"
+							required
+							className="mb-3 text-sm text-white bg-gray-600 rounded-sm textarea textarea-lg h-[120px]"
+						/>
+					</div>
+				</Reveal>
 
 				<div className="flex justify-end mt-3">
 					<input

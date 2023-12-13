@@ -13,35 +13,24 @@ body {
 	background-color: rgba(255, 255, 255, 0.089) !important;
 }
 
+/* scrollbar */
 ::-webkit-scrollbar {
-	width: 3px;
+	width: 6px;
 }
-
 ::-webkit-scrollbar-thumb {
-	height: 10%;
-	background-color: #579981;
-	border-radius: 50px;
+	background-color: #ee8308;
 }
-
+::-webkit-scrollbar-thumb:hover {
+	background-color: #c56c05;
+}
 ::-webkit-scrollbar-track {
-	background-color: #172031;
+	background-color: #fff;
 }
 
+/* svg/grain */
 .noise {
 	position: relative;
-	/* background-color: hsla(0, 100%, 50%, 1); */
-	/* background-color: rgb(252, 99, 99); */
-
-	/* background-image: radial-gradient(at 40% 20%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
-        radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
-        radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
-        radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%); */
-	/* background-blend-mode: color; */
 }
-
 .noise::before {
 	content: "";
 	position: absolute;
@@ -58,18 +47,9 @@ body {
 	opacity: 0.19;
 }
 
+/* background color */
 .background {
-	/* background-image: linear-gradient(
-		to right top,
-		#051937,
-		#3f2c58,
-		#7b3c6d,
-		#b75074,
-		#e96e6e
-	); */
-
 	background-color: rgb(252, 99, 99);
-
 	background-image: radial-gradient(
 			at 50% 30%,
 			hsla(28, 100%, 74%, 1) 0px,
@@ -102,101 +82,22 @@ body {
 			#b75074,
 			#e96e6e
 		);
-
 		/* background-color: rgb(252, 99, 99); */
-
 		background-blend-mode: color;
 	}
 }
 
-/* .link {
-	width: 15rem;
-	height: 15rem;
-	display: inline-block;
-	font: 300 1.35rem/1.4 "Source Code Pro";
-	text-transform: uppercase;
-	letter-spacing: 0.1175em;
-	word-spacing: 0.3em;
-	text-decoration: none;
-	z-index: 99999;
-	cursor: default;
-}
-.link__svg {
-	width: 100%;
-	height: auto;
-	transform-box: fill-box;
-	fill: #fff;
-	stroke: #fff;
-	stroke-width: 0.05em;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-}
-
-.link__arrow {
-	transform-origin: 50% 50%;
-	transition: transform 0.15s cubic-bezier(0.32, 0, 0.67, 0);
-}
-.link:hover .link:hover .link__arrow {
-	transform: scale(1.1);
-	transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
-}
-.link__arrow {
-	stroke-width: 0.075em;
-}
-.link__text {
-	animation: rotateReverse normal infinite 20s linear;
-	transform-origin: 50% 50%;
-}
-.link:hover .link__text {
-	animation-play-state: paused;
-}
-.link--alt {
-	font-size: 1.15rem;
-	letter-spacing: 0;
-	word-spacing: 0;
-}
-@keyframes rotate {
-	to {
-		transform: rotate(360deg);
-	}
-}
-@keyframes rotateReverse {
-	to {
-		transform: rotate(-360deg);
-	}
-} */
-
-/* .icon-box {
-	display: flex;
-	flex-direction: row;
-	width: 200px;
-	justify-content: space-around;
-	border: 1px solid #ddd;
-	padding: 1em;
-	border-radius: 4px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-} */
-
+/* tooltip */
 .icon {
-	/* height: 24px; */
-	/* width: 24px; */
 	position: relative;
 	cursor: pointer;
 }
-/* .icon svg {
-	transition: 0.3s ease;
-} */
 .icon:hover .tooltip {
 	display: block;
 }
-
 .icon__cow:hover svg {
 	fill: #c2410c;
 }
-
 .tooltip {
 	padding: 10px;
 	position: absolute;
@@ -214,8 +115,12 @@ body {
 	font-size: 0.5em;
 	display: none;
 }
+.tooltip__cow {
+	color: #bc6c62;
+	box-shadow: 1px 1px 20px rgba(188, 108, 98, 0.3);
+}
 
-/* .tooltip:after {
+.tooltip:after {
 	content: "";
 	position: absolute;
 	display: block;
@@ -241,28 +146,4 @@ body {
 	top: 0px;
 	z-index: -1;
 	box-shadow: -1px -1px 20px #aaa;
-} */
-/* .tooltip__dang {
-	color: #d30423;
-	box-shadow: 1px 1px 20px rgba(211, 4, 35, 0.3);
 }
-.tooltip__src {
-	color: #0641ad;
-	box-shadow: 1px 1px 20px rgba(6, 65, 173, 0.3);
-	top: -50px;
-}
-.tooltip__src:after {
-	top: auto;
-	bottom: -8px;
-}
-.tooltip__src:before {
-	top: auto;
-	bottom: -8px;
-} */
-
-.tooltip__cow {
-	color: #bc6c62;
-	box-shadow: 1px 1px 20px rgba(188, 108, 98, 0.3);
-}
-
-/* button */

@@ -16,7 +16,7 @@ const Projects = () => {
 				cascade
 				triggerOnce
 				damping={0.1}
-				className="grid grid-cols-1 drop-shadow-md"
+				className="grid grid-cols-1 mx-1 lg:mx-0 md:mx-2 drop-shadow-md "
 			>
 				{/* project 1 */}
 				{/* <div className="relative grid grid-cols-2 mb-8">
@@ -82,7 +82,7 @@ const Projects = () => {
 				</div> */}
 
 				{/* project 2 */}
-				<div className="relative grid grid-cols-2 mb-8">
+				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
 					<a
 						href="https://summercamp12-1ae5f.web.app/"
 						className="relative order-2"
@@ -103,7 +103,7 @@ const Projects = () => {
 						<p className="mb-3 text-xl font-semibold text-white">
 							SocialLink
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] absolute left-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
 							SocialLink is a social media website. It is a{" "}
 							<span className="text-orange-400">
 								group project
@@ -112,7 +112,7 @@ const Projects = () => {
 							can also like, comment, share stories with their
 							followers.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[150px] justify-end gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[150px] justify-end md:mt-[10px] gap-1">
 							<p className="">React</p>
 							<p className="">Node.js</p>
 							<p className="">Tailwind CSS</p>
@@ -154,7 +154,7 @@ const Projects = () => {
 				</div>
 
 				{/* project 3 */}
-				<div className="relative grid grid-cols-2 mb-8">
+				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
 					<a
 						href="https://animefig-3626c.web.app/"
 						className="relative"
@@ -175,7 +175,7 @@ const Projects = () => {
 						<p className="mb-3 text-xl font-semibold text-white">
 							animeFig
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-500 lg:max-w-[490px] absolute right-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
 							animeFig Is a{" "}
 							<span className="text-orange-400">full-stack</span>{" "}
 							web application. Anyone logged in can view details
@@ -183,7 +183,7 @@ const Projects = () => {
 							is also implemented in the website. For styling
 							Tailwind CSS and daisyUI were used.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[164px] justify-end gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[164px] justify-end gap-1 md:mt-[10px]">
 							<p className="">React</p>
 							<p className="">Node.js</p>
 							<p className="">MongoDB</p>
@@ -222,7 +222,7 @@ const Projects = () => {
 				</div>
 
 				{/* project 4 */}
-				<div className="relative grid grid-cols-2 mb-8">
+				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
 					<a
 						href="https://summercamp12-1ae5f.web.app/"
 						className="relative order-2"
@@ -243,7 +243,7 @@ const Projects = () => {
 						<p className="mb-3 text-xl font-semibold text-white">
 							SoundWaves
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-500 lg:max-w-[490px] absolute left-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-500 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
 							SoundWaves Is a full-stack web application with{" "}
 							<span className="text-orange-400">
 								dynamic user based dashboard
@@ -253,7 +253,7 @@ const Projects = () => {
 							Students can choose classes and pay for that class
 							using stripe.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[164px] justify-end gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[164px] justify-end gap-1 md:mt-[10px]">
 							<p className="">React</p>
 							<p className="">Stripe</p>
 							<p className="">Firebase</p>
@@ -294,7 +294,7 @@ const Projects = () => {
 				</div>
 
 				{/* project 5 */}
-				<div className="relative grid grid-cols-2 mb-8">
+				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
 					<a
 						href="https://assignment-10-5ba07.web.app/"
 						className="relative order-1 rounded-sm"
@@ -314,11 +314,11 @@ const Projects = () => {
 						<p className="mb-3 text-xl font-semibold text-white">
 							Smoki'n
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-500 lg:max-w-[490px] absolute right-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
 							Smoki'n is a Single page React project. It's main
 							feature is it's firebase integration, dynamic url.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[124px] justify-end gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[124px] justify-end md:mt-[10px] gap-1">
 							<p className="">React</p>
 							<p className="">Firebase</p>
 							<p className="">Tailwind CSS</p>
@@ -357,7 +357,7 @@ const Projects = () => {
 				</div>
 
 				{/* project 6*/}
-				<div className="relative grid grid-cols-2 mb-8">
+				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
 					<a
 						href="https://grand-medovik-3fb536.netlify.app/"
 						className="relative order-2"
@@ -378,13 +378,13 @@ const Projects = () => {
 						<p className="mb-3 text-xl font-semibold text-white">
 							Geometry Genius
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-500 lg:max-w-[490px] absolute left-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-500 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
 							Geometry Genius is a{" "}
 							<span className="text-orange-400">javascript</span>{" "}
 							application. The website is made to do simple
 							geometry calculation.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[150px] justify-end gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[150px] md:mt-[10px] justify-end gap-1">
 							<p className="">React</p>
 							<p className="">Node.js</p>
 							<p className="">MongoDB</p>
@@ -414,7 +414,7 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* project 7*/}
-				<div className="relative grid grid-cols-2 mb-8">
+				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
 					<a
 						href="https://peppy-meringue-c00170.netlify.app/"
 						className="relative order-1 rounded-sm"
@@ -434,10 +434,10 @@ const Projects = () => {
 						<p className="mb-3 text-xl font-semibold text-white">
 							Prohub
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-500 lg:max-w-[490px] absolute right-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
 							Prohub is a simple single page React application.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[150px] justify-end gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 md:mt-[10px] lg:mt-[150px] justify-end gap-1">
 							<p className="">React</p>
 							<p className="">BootStrap</p>
 						</div>

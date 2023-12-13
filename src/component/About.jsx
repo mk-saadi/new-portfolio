@@ -4,21 +4,23 @@ import Reveal from "react-awesome-reveal";
 
 const About = () => {
 	return (
-		<div className="grid grid-cols-1 text-left lg:grid-cols-3">
+		<div className="grid grid-cols-1 mx-2 text-left lg:grid-cols-3 md:mx-4">
 			<div className="order-2 col-span-2 lg:order-1">
-				<p className="text-[#579981] font-sans text-xl text-left">
+				<p className="mt-3 font-sans text-xl text-center text-orange-700 md:text-2xl lg:text-xl lg:mt-0 lg:text-left">
 					01. <span className="text-white">About Me</span>
 				</p>
-				<div className="text-gray-300 lg:mr-8 mt-14">
-					Hi, My name is Muhiuddin Khaled and I enjoy creating things
-					that I like. <br /> I started learning web development in
-					January 2023 and after learning for more than 6 months I am
-					ready to start working in the real world.
+				<div className="mt-2 text-sm text-gray-300 md:text-base lg:mr-8 md:mt-14">
+					As a MERN stack web developer, I'm on a mission to create
+					digital experiences that leave a lasting impact.
+					<br />
+					My focus is on building applications that not only meet
+					functional requirements but also provide a delightful user
+					experience.
 				</div>
 				<p className="mt-5 mr-10 text-gray-300">
 					Some of the web technology that I'm familiar with are:
 				</p>
-				<div className="grid grid-cols-2 mx-8 mt-2 text-left text-gray-300">
+				<div className="grid grid-cols-2 mx-8 mt-2 text-sm text-left text-gray-300 md:text-base">
 					<div>
 						<p className="flex items-center gap-2 text-left">
 							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
@@ -71,26 +73,13 @@ const About = () => {
 			</div>
 			<Reveal
 				triggerOnce
-				className="relative order-1 mt-16 lg:order-2 noise"
+				className="order-1 mx-10 mt-16 duration-200 shadow-md drop-shadow-md lg:drop-shadow-none lg:shadow-none lg:order-2 noise md:mx-48 lg:mx-0"
 			>
 				<img
 					src={pro}
 					alt=""
-					className="rounded-md shadow-md grayscale"
+					className="rounded-md grayscale hover:grayscale-0 lg:shadow-md lg:drop-shadow-md"
 				/>
-				<div
-					className="shadow-md drop-shadow-md"
-					style={{
-						position: "absolute",
-						top: 0,
-						left: 0,
-						width: "100%",
-						height: "100%",
-						backgroundColor: "#f2754c",
-						mixBlendMode: "multiply",
-						borderRadius: "4px",
-					}}
-				></div>
 			</Reveal>
 		</div>
 	);

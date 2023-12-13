@@ -18,7 +18,7 @@ const Header = ({ navigateToSection, aboutRef, projectsRef, contactRef }) => {
 				</h1>
 			</div>
 			<nav>
-				<ul className="flex items-center justify-center gap-6 mr-8 font-sans text-sm font-semibold text-gray-600 md:text-base">
+				<ul className="flex items-center justify-center gap-4 mx-1 mt-2 font-sans text-sm font-semibold text-gray-600 md:mt-0 md:gap-6 md:mx-0 md:mr-8 md:text-base">
 					<li>
 						<button
 							className="duration-200 hover:text-orange-700"

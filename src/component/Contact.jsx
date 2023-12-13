@@ -46,8 +46,8 @@ const Contact = () => {
 					onHide={hideToast}
 				/>
 			)}
-			<div className="bg-orange-400 lg:rounded-s-md ">
-				<p className="flex justify-end px-6 pt-6 -mr-4 text-2xl font-bold text-slate-100">
+			<div className="bg-orange-400 lg:rounded-s-md">
+				<p className="flex justify-start px-6 pt-6 text-2xl font-bold md:justify-end md:-mr-4 text-slate-100">
 					03. Let's Get
 				</p>
 				<div className="p-4 text-sm">
@@ -56,15 +56,15 @@ const Contact = () => {
 						simply want to connect, Feel free to send me a message
 						in the contact form.
 					</p>
-					<p className="flex flex-col gap-1 mt-7 text-slate-200">
+					<p className="flex flex-row gap-3 md:flex-col md:gap-1 mt-7 text-slate-200">
 						<FaMapLocationDot className="text-2xl md:text-xl" />
 						Gopalganj, Bangladesh
 					</p>
-					<p className="flex flex-col gap-1 my-3 text-slate-200">
+					<p className="flex flex-row gap-3 my-3 md:flex-col md:gap-1 text-slate-200">
 						<MdEmail className="text-2xl md:text-xl" />
 						mksaadi820@gmail.com
 					</p>
-					<p className="flex flex-col gap-1 my-3 text-slate-200">
+					<p className="flex flex-row gap-3 my-3 md:flex-col md:gap-1 text-slate-200">
 						<FaPhoneAlt className="text-2xl md:text-xl" />
 						+8801835368886
 					</p>
@@ -98,9 +98,9 @@ const Contact = () => {
 			<form
 				ref={form}
 				onSubmit={sendEmail}
-				className="col-span-2 p-6 bg-white rounded-e-md"
+				className="col-span-2 p-2 bg-white md:p-6 rounded-e-md"
 			>
-				<p className="-ml-4 text-2xl font-bold text-orange-400">
+				<p className="text-2xl font-bold text-orange-400 md:-ml-4">
 					In Touch
 				</p>
 				<Reveal
@@ -115,7 +115,7 @@ const Contact = () => {
 							type="text"
 							name="to_name"
 							required
-							className="mb-3 text-white bg-gray-600 rounded-sm input"
+							className="p-1 mb-3 text-sm text-white bg-gray-600 rounded-sm input md:p-4"
 						/>
 					</div>
 
@@ -127,7 +127,7 @@ const Contact = () => {
 							type="email"
 							name="from_email"
 							required
-							className="mb-3 text-white bg-gray-600 rounded-sm input"
+							className="p-1 mb-3 text-sm text-white bg-gray-600 rounded-sm input md:p-4"
 						/>
 					</div>
 
@@ -138,7 +138,7 @@ const Contact = () => {
 						<textarea
 							name="message"
 							required
-							className="mb-3 text-sm text-white bg-gray-600 rounded-sm textarea textarea-lg h-[120px]"
+							className="mb-3 text-sm text-white bg-gray-600 rounded-sm textarea textarea-lg p-1 md:p-4 h-[120px]"
 						/>
 					</div>
 				</Reveal>

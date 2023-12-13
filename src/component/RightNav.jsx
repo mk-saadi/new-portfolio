@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 const RightNav = () => {
 	return (
 		<div className="flex flex-col items-center justify-end h-screen mb-28">
-			<div className="flex flex-col gap-6 px-1 py-6 text-2xl text-orange-400 bg-white rounded-md shadow-md drop-shadow-md lg:text-3xl ">
+			<div className="flex flex-col gap-6 px-1 py-6 text-2xl text-orange-400 bg-white rounded-md shadow-md drop-shadow-lg lg:text-3xl ">
 				<div className="icon-box">
 					<div className="icon icon__cow">
 						<div className="tooltip tooltip__cow">

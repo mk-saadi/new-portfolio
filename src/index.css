@@ -115,6 +115,26 @@ body {
 	font-size: 0.5em;
 	display: none;
 }
+@media (max-width: 900px) {
+	.tooltip {
+		padding: 10px;
+		position: absolute;
+		width: auto;
+		white-space: nowrap;
+		word-wrap: no-wrap;
+		box-shadow: 1px 1px 20px #aaa;
+		border-radius: 5px;
+		background-color: #fff;
+		top: -10px;
+		left: -450%;
+		transform: translate(-50%);
+		transform-style: preserve-3d;
+		z-index: 200;
+		font-size: 0.5em;
+		display: none;
+	}
+}
+
 .tooltip__cow {
 	color: #bc6c62;
 	box-shadow: 1px 1px 20px rgba(188, 108, 98, 0.3);

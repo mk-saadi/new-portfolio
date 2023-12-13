@@ -2,7 +2,7 @@
 
 const Intro = ({ scrollToFooter, pdf }) => {
 	return (
-		<div className="flex items-center justify-center min-h-[80vh] mx-4 md:mx-0">
+		<div className="flex items-center justify-center min-h-[80vh] mx-4 lg:mx-0">
 			<div className="text-left">
 				<div>
 					<p className="mb-2 font-sans text-xl text-orange-400">

@@ -82,7 +82,7 @@ const Projects = () => {
 				</div> */}
 
 				{/* project 2 */}
-				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
+				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:bg-transparent md:p-0 md:shadow-none">
 					<a
 						href="https://summercamp12-1ae5f.web.app/"
 						className="relative order-2"
@@ -92,12 +92,12 @@ const Projects = () => {
 						<img
 							src={social}
 							alt=""
-							className="w-auto col-span-1 duration-200 rounded-md cursor-pointer h-80 saturate-0 hover:saturate-100"
+							className="w-auto h-auto col-span-1 duration-200 rounded-md cursor-pointer lg:h-80 saturate-0 hover:saturate-100"
 						/>
 					</a>
 
 					<div className="z-20 order-1 col-span-1 text-left">
-						<p className="font-semibold text-orange-400">
+						<p className="font-semibold text-orange-500 md:text-orange-400">
 							Featured Project 01
 						</p>
 						<p className="mb-3 text-xl font-semibold text-white">
@@ -112,7 +112,7 @@ const Projects = () => {
 							can also like, comment, share stories with their
 							followers.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[150px] justify-end md:mt-[10px] gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[150px] justify-end mt-[10px] gap-1">
 							<p className="">React</p>
 							<p className="">Node.js</p>
 							<p className="">Tailwind CSS</p>
@@ -154,7 +154,7 @@ const Projects = () => {
 				</div>
 
 				{/* project 3 */}
-				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
+				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
 						href="https://animefig-3626c.web.app/"
 						className="relative"
@@ -164,18 +164,18 @@ const Projects = () => {
 						<img
 							src={ass1}
 							alt=""
-							className="w-auto col-span-1 duration-200 rounded-md cursor-pointer h-80 saturate-0 hover:saturate-100"
+							className="w-auto h-auto col-span-1 duration-200 rounded-md cursor-pointer lg:h-80 saturate-0 hover:saturate-100"
 						/>
 					</a>
 
 					<div className="z-20 col-span-1 text-right">
-						<p className="font-semibold text-orange-400">
+						<p className="font-semibold text-orange-500 md:text-orange-400">
 							Featured Project 02
 						</p>
 						<p className="mb-3 text-xl font-semibold text-white">
 							animeFig
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:right-0 mt-3 z-30">
 							animeFig Is a{" "}
 							<span className="text-orange-400">full-stack</span>{" "}
 							web application. Anyone logged in can view details
@@ -183,7 +183,7 @@ const Projects = () => {
 							is also implemented in the website. For styling
 							Tailwind CSS and daisyUI were used.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[164px] justify-end gap-1 md:mt-[10px]">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[154px] justify-end gap-1 mt-[10px]">
 							<p className="">React</p>
 							<p className="">Node.js</p>
 							<p className="">MongoDB</p>
@@ -222,7 +222,7 @@ const Projects = () => {
 				</div>
 
 				{/* project 4 */}
-				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
+				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
 						href="https://summercamp12-1ae5f.web.app/"
 						className="relative order-2"
@@ -232,12 +232,12 @@ const Projects = () => {
 						<img
 							src={ass2}
 							alt=""
-							className="w-auto col-span-1 duration-200 rounded-md cursor-pointer h-80 saturate-0 hover:saturate-100"
+							className="w-auto h-auto col-span-1 duration-200 rounded-md cursor-pointer lg:h-80 saturate-0 hover:saturate-100"
 						/>
 					</a>
 
 					<div className="z-20 order-1 col-span-1 text-left">
-						<p className="font-semibold text-orange-400">
+						<p className="font-semibold text-orange-500 md:text-orange-400">
 							Featured Project 03
 						</p>
 						<p className="mb-3 text-xl font-semibold text-white">
@@ -253,7 +253,7 @@ const Projects = () => {
 							Students can choose classes and pay for that class
 							using stripe.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[164px] justify-end gap-1 md:mt-[10px]">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[164px] justify-end gap-1 mt-[10px]">
 							<p className="">React</p>
 							<p className="">Stripe</p>
 							<p className="">Firebase</p>
@@ -294,7 +294,7 @@ const Projects = () => {
 				</div>
 
 				{/* project 5 */}
-				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
+				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
 						href="https://assignment-10-5ba07.web.app/"
 						className="relative order-1 rounded-sm"
@@ -304,21 +304,21 @@ const Projects = () => {
 						<img
 							src={ass3}
 							alt=""
-							className="w-auto col-span-1 duration-200 rounded-md cursor-pointer h-80 saturate-0 hover:saturate-100"
+							className="w-auto h-auto col-span-1 duration-200 rounded-md cursor-pointer lg:h-80 saturate-0 hover:saturate-100"
 						/>
 					</a>
 					<div className="z-20 order-2 col-span-1 text-right">
-						<p className="font-semibold text-orange-400">
+						<p className="font-semibold text-orange-500 md:text-orange-400">
 							Featured Project 04
 						</p>
 						<p className="mb-3 text-xl font-semibold text-white">
 							Smoki'n
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:right-0 mt-3 z-30">
 							Smoki'n is a Single page React project. It's main
 							feature is it's firebase integration, dynamic url.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[124px] justify-end md:mt-[10px] gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[114px] justify-end mt-[10px] gap-1">
 							<p className="">React</p>
 							<p className="">Firebase</p>
 							<p className="">Tailwind CSS</p>
@@ -357,7 +357,7 @@ const Projects = () => {
 				</div>
 
 				{/* project 6*/}
-				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
+				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
 						href="https://grand-medovik-3fb536.netlify.app/"
 						className="relative order-2"
@@ -367,12 +367,12 @@ const Projects = () => {
 						<img
 							src={geo}
 							alt=""
-							className="w-auto col-span-1 duration-200 rounded-md cursor-pointer h-80 saturate-0 hover:saturate-100"
+							className="w-auto h-auto col-span-1 duration-200 rounded-md cursor-pointer lg:h-80 saturate-0 hover:saturate-100"
 						/>
 					</a>
 
 					<div className="z-20 order-1 col-span-1 text-left">
-						<p className="font-semibold text-orange-400">
+						<p className="font-semibold text-orange-500 md:text-orange-400">
 							Featured Project 05
 						</p>
 						<p className="mb-3 text-xl font-semibold text-white">
@@ -384,7 +384,7 @@ const Projects = () => {
 							application. The website is made to do simple
 							geometry calculation.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[150px] md:mt-[10px] justify-end gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[110px] mt-[10px] justify-end gap-1">
 							<p className="">React</p>
 							<p className="">Node.js</p>
 							<p className="">MongoDB</p>
@@ -414,7 +414,7 @@ const Projects = () => {
 					</div>
 				</div>
 				{/* project 7*/}
-				<div className="relative grid gap-4 mb-16 md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 ">
+				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
 						href="https://peppy-meringue-c00170.netlify.app/"
 						className="relative order-1 rounded-sm"
@@ -424,20 +424,20 @@ const Projects = () => {
 						<img
 							src={ass8}
 							alt=""
-							className="w-auto col-span-1 duration-200 rounded-md cursor-pointer h-80 saturate-0 hover:saturate-100"
+							className="w-auto h-auto col-span-1 duration-200 rounded-md cursor-pointer lg:h-80 saturate-0 hover:saturate-100"
 						/>
 					</a>
 					<div className="z-20 order-2 col-span-1 text-right">
-						<p className="font-semibold text-orange-400">
+						<p className="font-semibold text-orange-500 md:text-orange-400">
 							Featured Project 06
 						</p>
 						<p className="mb-3 text-xl font-semibold text-white">
 							Prohub
 						</p>
-						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:left-0 mt-3 z-30">
+						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-600 lg:max-w-[490px] lg:absolute lg:right-0 mt-3 z-30">
 							Prohub is a simple single page React application.
 						</p>
-						<div className="text-gray-300 text-xs grid grid-cols-2 md:mt-[10px] lg:mt-[150px] justify-end gap-1">
+						<div className="text-gray-300 text-xs grid grid-cols-2 mt-[10px] lg:mt-[90px] justify-end gap-1">
 							<p className="">React</p>
 							<p className="">BootStrap</p>
 						</div>

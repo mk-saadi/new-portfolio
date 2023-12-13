@@ -32,7 +32,7 @@ function App() {
 				contactRef={contactRef}
 			/>
 
-			<div className="fixed bottom-0 z-50 hidden left-3 md:block">
+			<div className="fixed bottom-0 z-50 hidden md:right-3 lg:right-auto lg:left-3 md:block">
 				<RightNav />
 			</div>
 
@@ -54,7 +54,7 @@ function App() {
 					className="items-center justify-center min-h-[70vh] pt-20"
 				>
 					<div className="text-left mb-14">
-						<p className="text-[#579981] text-xl">
+						<p className="text-xl text-orange-700">
 							02.{" "}
 							<span className="text-white">
 								Some of my projects
@@ -69,7 +69,7 @@ function App() {
 				<footer
 					ref={contactRef}
 					id="foot"
-					className="flex items-center justify-center mt-[300px] pt-20"
+					className="flex items-center justify-center mt-[300px] pt-20 mx-2 md:mx-4 lg:mx-0"
 				>
 					<Footer />
 				</footer>

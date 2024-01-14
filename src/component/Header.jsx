@@ -4,7 +4,7 @@ import head1 from "../assets/MK__1_-removebg-preview.png";
 const Header = ({ navigateToSection, aboutRef, projectsRef, contactRef }) => {
 	return (
 		<div
-			className="sticky top-0 z-50 flex flex-col items-center py-2 bg-white shadow-md md:flex-row"
+			className="sticky top-0 z-50 flex flex-col items-center py-2 bg-white shadow-md drop-shadow-md md:flex-row"
 			// data-theme="cyberpunk"
 		>
 			<div className="flex-1 ml-8">

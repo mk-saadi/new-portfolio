@@ -11,7 +11,7 @@ const Intro = ({ scrollToFooter, pdf }) => {
 					<p className="font-sans text-4xl font-extrabold text-white lg:text-7xl">
 						Muhiuddin Khaled
 					</p>
-					<p className="font-sans text-2xl font-extrabold text-gray-300 md:text-5xl">
+					<p className="font-sans text-2xl font-extrabold text-gray-300 md:text-3xl lg:text-5xl">
 						A Passionate MERN Developer.
 					</p>
 					<p className="py-5 text-gray-300">

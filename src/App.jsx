@@ -24,7 +24,7 @@ function App() {
 	};
 
 	return (
-		<div className="relative noise background max-w-[1920px] mx-auto">
+		<div className="relative noise background mx-auto">
 			<Header
 				navigateToSection={navigateToSection}
 				aboutRef={aboutRef}
@@ -54,7 +54,7 @@ function App() {
 					className="items-center justify-center min-h-[70vh] pt-20"
 				>
 					<div className="text-left mb-14">
-						<p className="text-xl text-orange-700">
+						<p className="text-xl text-orange-600 ml-2 md:-mb-5 -mb-4 lg:mb-0 font-[600]">
 							02.{" "}
 							<span className="text-white">
 								Some of my projects
@@ -78,7 +78,8 @@ function App() {
 			<div className="absolute bottom-0 right-0 z-10 w-screen text-center bg-slate-800">
 				<p className="pt-32 pb-4 text-sm text-center text-white">
 					<span>
-						&copy;{new Date().getFullYear()} Muhiuddin Khaled
+						&copy;{new Date().getFullYear()} Muhiuddin Khaled{" "}
+						<span className="text-gray-300">Saadi</span>
 					</span>
 				</p>
 			</div>

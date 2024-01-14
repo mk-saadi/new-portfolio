@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	max-width: 1920px;
+	margin: auto;
+}
+
 body {
-	/* background-color: #172031; */
 	color: rgb(210, 210, 210);
 	font-family: "Source Code Pro", monospace;
 }
@@ -44,44 +48,25 @@ body {
 	z-index: 20;
 	pointer-events: none;
 
-	opacity: 0.19;
+	opacity: 0.29;
 }
 
 /* background color */
 .background {
 	background-color: rgb(252, 99, 99);
-	background-image: radial-gradient(
-			at 50% 30%,
-			hsla(28, 100%, 74%, 1) 0px,
-			transparent 50%
-		),
+	background-image: radial-gradient(at 50% 30%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
 		radial-gradient(at 80% 0%, rgb(255, 31, 117) 0px, transparent 50%),
 		radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
-		radial-gradient(
-			at 80% 50%,
-			hsla(340, 100%, 76%, 1) 0px,
-			transparent 50%
-		),
+		radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
 		radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
-		radial-gradient(
-			at 80% 100%,
-			hsla(242, 100%, 70%, 1) 0px,
-			transparent 50%
-		),
+		radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
 		radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
 	background-blend-mode: color;
 }
 
 @media (max-width: 420px) {
 	.background {
-		background-image: linear-gradient(
-			to right top,
-			#051937,
-			#3f2c58,
-			#7b3c6d,
-			#b75074,
-			#e96e6e
-		);
+		background-image: linear-gradient(to right top, #051937, #3f2c58, #7b3c6d, #b75074, #e96e6e);
 		/* background-color: rgb(252, 99, 99); */
 		background-blend-mode: color;
 	}

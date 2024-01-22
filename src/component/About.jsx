@@ -39,12 +39,11 @@ const About = () => {
 					</a>
 				</div>
 				<div className="mt-2 text-sm text-gray-300 md:text-base lg:mr-8 md:mt-8">
-					As a MERN stack web developer, I'm on a mission to create
-					digital experiences that leave a lasting impact.
+					As a MERN stack web developer, I'm on a mission to create digital experiences that leave a
+					lasting impact.
 					<br />
-					My focus is on building applications that not only meet
-					functional requirements but also provide a delightful user
-					experience.
+					My focus is on building applications that not only meet functional requirements but also
+					provide a delightful user experience.
 				</div>
 				<p className="mt-5 mr-10 text-gray-300">
 					Some of the web technology that I'm familiar with are:
@@ -52,50 +51,42 @@ const About = () => {
 				<div className="grid grid-cols-2 mt-2 text-sm text-left text-gray-300 lg:mx-8 md:text-base">
 					<div>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							JavaScript
+							<BiSolidRightArrow className="text-xs text-orange-400" /> JavaScript
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							React
+							<BiSolidRightArrow className="text-xs text-orange-400" /> React
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							Tailwind CSS
+							<BiSolidRightArrow className="text-xs text-orange-400" /> Next JS
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							BootStrap
+							<BiSolidRightArrow className="text-xs text-orange-400" /> Tailwind CSS
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							Material UI
+							<BiSolidRightArrow className="text-xs text-orange-400" /> BootStrap
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							Figma
+							<BiSolidRightArrow className="text-xs text-orange-400" /> Material UI
+						</p>
+						<p className="flex items-center gap-2 text-left">
+							<BiSolidRightArrow className="text-xs text-orange-400" /> Figma
 						</p>
 					</div>
 					<div>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							Node.js
+							<BiSolidRightArrow className="text-xs text-orange-400" /> Node.js
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							MongoDB
+							<BiSolidRightArrow className="text-xs text-orange-400" /> MongoDB
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							Express
+							<BiSolidRightArrow className="text-xs text-orange-400" /> Express
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							jsonwebtoken
+							<BiSolidRightArrow className="text-xs text-orange-400" /> jsonwebtoken
 						</p>
 						<p className="flex items-center gap-2 text-left">
-							<BiSolidRightArrow className="text-xs text-orange-400" />{" "}
-							Firebase
+							<BiSolidRightArrow className="text-xs text-orange-400" /> Firebase
 						</p>
 					</div>
 				</div>

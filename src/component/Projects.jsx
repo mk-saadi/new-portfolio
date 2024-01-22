@@ -23,7 +23,7 @@ const Projects = () => {
 				{/* project 1 */}
 				<div className="relative grid grid-cols-2 mb-8">
 					<a
-						href="https://animefig-3626c.web.app/"
+						href="https://fir-auth-b5c3a.web.app/register"
 						className="relative"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -39,11 +39,8 @@ const Projects = () => {
 						<p className="font-semibold text-orange-400">Featured Project 01</p>
 						<p className="mb-3 text-xl font-semibold text-white">Simple CRUD application</p>
 						<p className="text-sm bg-white shadow-md rounded-sm py-4 pr-2 pl-3 text-gray-500 lg:max-w-[490px] absolute right-0 mt-3 z-30">
-							DiFly is an <span className="text-orange-400">official</span> website I made for a{" "}
-							<span className="text-orange-400">Data Entry</span> company. The website has
-							different user roles. Certain users can post update in the website, the post can
-							also be liked by other users. There is also{" "}
-							<span className="text-orange-400">message</span> functionality in the website.
+							A simple <span className="text-orange-400">CRUD</span> application to add, edit,
+							delete data to mongodb database.
 						</p>
 
 						<div className="text-gray-300 text-xs grid grid-cols-2 lg:mt-[164px] justify-end gap-1">
@@ -52,29 +49,42 @@ const Projects = () => {
 							<p className="">MongoDB</p>
 							<p className="">Firebase</p>
 							<p className="">Tailwind CSS</p>
-							<p className="">React-Markdown</p>
-							<p className="">Tanstack-query</p>
+							<p className="">HeadlessUI</p>
 							<p className="">Axios</p>
 						</div>
 						<div className="flex items-center justify-end gap-6 mt-3 text-2xl text-white">
 							<a
-								href="https://github.com/mk-saadi/animeFig-Client"
+								href="https://github.com/mk-saadi/innovation-client"
 								target="_blank"
 								rel="noopener noreferrer"
+								className="flex items-center justify-center gap-2 duration-200 hover:text-orange-400"
 							>
-								<FaGithub className="duration-200 hover:text-orange-400" />
+								<FaGithub />
+								<span className="text-sm">Client</span>
 							</a>
 							<a
-								href="https://animefig-3626c.web.app/"
+								href="https://github.com/mk-saadi/innovation-server"
 								target="_blank"
 								rel="noopener noreferrer"
+								className="flex items-center justify-center gap-2 duration-200 hover:text-orange-400"
 							>
-								<FaExternalLinkAlt className="duration-200 hover:text-orange-400" />
+								<FaGithub />
+								<span className="text-sm">Server</span>
+							</a>
+							<a
+								href="https://fir-auth-b5c3a.web.app/register"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center justify-center gap-2 duration-200 hover:text-orange-400"
+							>
+								<FaExternalLinkAlt />
+								<span className="text-sm">Live</span>
 							</a>
 						</div>
 					</div>
-				</div>{" "}
-				*{/* project 2 */}
+				</div>
+
+				{/* project 2 */}
 				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:bg-transparent md:p-0 md:shadow-none">
 					<a
 						href="https://social-link-2nd.web.app/"
@@ -139,6 +149,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
+
 				{/* project 3 */}
 				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
@@ -202,6 +213,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
+
 				{/* project 4 */}
 				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
@@ -265,6 +277,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
+
 				{/* project 5 */}
 				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
@@ -325,6 +338,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
+
 				{/* project 6*/}
 				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a
@@ -378,6 +392,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
+
 				{/* project 7*/}
 				<div className="relative grid gap-4 p-2 mb-16 bg-gray-100 rounded-md shadow-md md:grid-cols-2 md:mb-20 lg:mb-10 lg:gap-0 md:gap-1 bg-opacity-30 md:shadow-none md:p-0 md:bg-transparent">
 					<a

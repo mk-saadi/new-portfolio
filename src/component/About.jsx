@@ -14,7 +14,7 @@ const About = () => {
 
 				<div className="flex items-center justify-center gap-4 mt-2 text-2xl text-white md:hidden">
 					<a
-						href="https://www.linkedin.com/in/mk-saadi-46a0aa242/"
+						href="https://www.linkedin.com/in/muhiuddin-khaled-46a0aa242/"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="hover:text-orange-400"

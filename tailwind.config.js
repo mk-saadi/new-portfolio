@@ -4,11 +4,11 @@ export default {
 	theme: {
 		fontFamily: {
 			sans: ["Source Code Pro"],
+			// sans: ["Montserrat", "sans-serif"],
+			// serif: ["Lora", "serif"],
 		},
 		extend: {},
 	},
-	plugins: [require("daisyui")],
-	daisyui: {
-		themes: ["light", "dark", "cyberpunk"],
-	},
+	// plugins: [require("daisyui")],
+	plugins: [],
 };

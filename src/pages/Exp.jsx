@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-// import "../styles/tabs.css";
+import "../styles/tabs.css";
+import Marquee from "react-fast-marquee";
 
 const Exp = () => {
 	const tabsData = [
@@ -9,8 +10,61 @@ const Exp = () => {
 	];
 
 	return (
-		<div className="p-4">
-			<AnimatedTabs tabs={tabsData} />
+		// <div className="relative min-h-screen overflow-hidden bg-[#fef6f1]">
+		// 	<div className="flex items-start justify-center max-h-screen overflow-hidden">
+		// 		<div className="opacity-80 select-none pointer-events-none absolute w-[200vw] h-[200vh] transform -rotate-45 -top-64 -translate-x-1/2 left-1/2">
+		// 			<div className="z-0 flex flex-col items-center justify-center w-full text-[#413831]">
+		// 				<Marquee
+		// 					speed={15}
+		// 					autoFill
+		// 					className="font-mono text-[10rem]"
+		// 				>
+		// 					Muhiuddin Khaled
+		// 				</Marquee>
+		// 				<Marquee
+		// 					speed={15}
+		// 					direction="right"
+		// 					autoFill
+		// 					className="text-[10rem] outlined"
+		// 				>
+		// 					Muhiuddin Khaled
+		// 				</Marquee>
+		// 				<Marquee
+		// 					speed={15}
+		// 					autoFill
+		// 					className="font-mono text-[10rem]"
+		// 				>
+		// 					Muhiuddin Khaled
+		// 				</Marquee>
+		// 				<Marquee
+		// 					speed={15}
+		// 					direction="right"
+		// 					autoFill
+		// 					className="text-[10rem] outlined"
+		// 				>
+		// 					Muhiuddin Khaled
+		// 				</Marquee>
+		// 				<Marquee
+		// 					speed={15}
+		// 					autoFill
+		// 					className="font-mono text-[10rem]"
+		// 				>
+		// 					Muhiuddin Khaled
+		// 				</Marquee>
+		// 			</div>
+		// 		</div>
+		// 	</div>
+		// 	{/* <AnimatedTabs tabs={tabsData} /> */}
+		// 	<div className="relative z-10 flex items-center justify-center w-full h-screen">
+		// 		<h1 className="uppercase text-8xl font-[900] text-black font-playfair">
+		// 			Transform the world
+		// 		</h1>
+		// 	</div>
+		// </div>
+		<div className="flex items-center justify-center h-screen">
+			<h1 className="uppercase text-8xl font-[900] text-black font-playfair">
+				Website Under Construction...
+			</h1>
 		</div>
 	);
 };

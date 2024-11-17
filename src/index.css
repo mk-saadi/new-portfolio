@@ -5,9 +5,33 @@
 html {
 	max-width: 1920px;
 	margin: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+	text-rendering: auto;
+	position: relative;
 }
 
-*::selection {
+html::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(to bottom, rgba(18, 16, 16, 0.7) 50%, rgba(0, 0, 0, 0) 50%);
+	background-size: 100% 3px;
+	z-index: 20;
+	pointer-events: none;
+}
+
+body {
+	font-family: "fira code";
+	font-weight: 600;
+	font-size: 18px;
+}
+
+/* *::selection {
 	color: #ee8308 !important;
 	background-color: rgba(255, 255, 255, 0.089) !important;
-}
+} */

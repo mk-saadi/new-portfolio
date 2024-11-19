@@ -4,13 +4,18 @@ export default {
 	darkMode: "class",
 	theme: {
 		fontFamily: {
-			sans: ["Source Code Pro"],
-			// sans: ["Montserrat", "sans-serif"],
-			serif: ["Bungee Outline"],
-			mono: ["Bungee"],
-			playfair: ["Playfair Display"],
+			sans: ["onest"],
+			serif: ["inter"],
 		},
-		extend: {},
+		extend: {
+			boxShadow: {
+				"nav-dark": "0px 0px 15px 4px rgba(0, 0, 0, 0.12)",
+				"nav-white": "0px 0px 15px 4px rgba(255, 255, 255, 0.12)",
+			},
+			colors: {
+				sobuj: "#7fe85a",
+			},
+		},
 	},
 	// plugins: [require("daisyui")],
 	plugins: [],

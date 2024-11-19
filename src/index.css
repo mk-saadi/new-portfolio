@@ -12,23 +12,35 @@ html {
 	position: relative;
 }
 
-html::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: linear-gradient(to bottom, rgba(18, 16, 16, 0.7) 50%, rgba(0, 0, 0, 0) 50%);
-	background-size: 100% 3px;
-	z-index: 20;
-	pointer-events: none;
+/* Remove the previous animation classes if you have them */
+.theme-icon {
+	/* Enable GPU acceleration for smoother animations */
+	transform: translateZ(0);
+	backface-visibility: hidden;
 }
 
+.theme-icon circle {
+	/* Ensure the circles use transform-box: fill-box for proper animation */
+	transform-box: fill-box;
+	transform-origin: center;
+}
 body {
 	font-family: "fira code";
 	font-weight: 600;
 	font-size: 18px;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.animate_spinning {
+	animation: spin 5s linear infinite;
 }
 
 /* *::selection {

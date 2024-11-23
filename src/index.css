@@ -11,23 +11,67 @@ html {
 	text-rendering: auto;
 	position: relative;
 }
-
-/* Remove the previous animation classes if you have them */
-.theme-icon {
-	/* Enable GPU acceleration for smoother animations */
-	transform: translateZ(0);
-	backface-visibility: hidden;
+html:before {
+	z-index: 999;
+	position: fixed;
+	content: "";
+	height: 300%;
+	width: 300%;
+	top: -100%;
+	left: -50%;
+	pointer-events: none;
+	user-select: none;
+	background-image: url("./assets/WhiteNoiseDithering.png");
+	opacity: 0.035;
+	animation: noise 8s steps(10) infinite;
+}
+@keyframes noise {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(-5%, -10%);
+	}
+	20% {
+		transform: translate(-15%, 5%);
+	}
+	30% {
+		transform: translate(7%, -25%);
+	}
+	40% {
+		transform: translate(-5%, 25%);
+	}
+	50% {
+		transform: translate(-15%, 10%);
+	}
+	60% {
+		transform: translate(15%, 0%);
+	}
+	70% {
+		transform: translate(0%, 15%);
+	}
+	80% {
+		transform: translate(3%, 35%);
+	}
+	90% {
+		transform: translate(-10%, 10%);
+	}
 }
 
-.theme-icon circle {
-	/* Ensure the circles use transform-box: fill-box for proper animation */
-	transform-box: fill-box;
-	transform-origin: center;
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(-25%);
+		animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+	}
+	50% {
+		transform: none;
+		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	}
 }
-body {
-	font-family: "fira code";
-	font-weight: 600;
-	font-size: 18px;
+.animate_bouncing {
+	animation: bounce 2s infinite;
 }
 
 @keyframes spin {
@@ -40,10 +84,27 @@ body {
 }
 
 .animate_spinning {
-	animation: spin 5s linear infinite;
+	animation: spin 10s linear infinite;
+	/* color: rgba(255, 255, 255, 0.12); */
 }
 
 /* *::selection {
 	color: #ee8308 !important;
 	background-color: rgba(255, 255, 255, 0.089) !important;
 } */
+.wavy-background {
+	background-color: #e0e0e0;
+	opacity: 0.8;
+	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e0e0e0 10px),
+		repeating-linear-gradient(#e0e0e0, hwb(0 99% 7%));
+}
+.wavy-background-dark {
+	background-color: #111111;
+	opacity: 0.8;
+	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #111111 10px),
+		repeating-linear-gradient(#111111, hwb(0 17% 89%));
+}
+
+.glowing {
+	text-shadow: currentColor 0px 0px 5px, currentColor 0px 0px 10px;
+}

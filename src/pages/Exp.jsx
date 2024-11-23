@@ -275,7 +275,6 @@
 
 // export default Exp;
 import React, { useState, useEffect, useRef } from "react";
-import backgroundImage from "../assets/terminal.png";
 
 const TerminalPortfolio = () => {
 	const [input, setInput] = useState("");
@@ -370,15 +369,7 @@ const TerminalPortfolio = () => {
 	};
 
 	return (
-		<div
-			className="min-h-screen p-4 bg-opacity-10"
-			style={{
-				backgroundImage: `url(${backgroundImage})`,
-				backgroundRepeat: "no-repeat", // Prevent image repetition
-				backgroundSize: "cover", // Fit the image within the container
-				// textShadow: "2px 2px 5px green",
-			}}
-		>
+		<div className="min-h-screen p-4 bg-opacity-10">
 			<div className="flex flex-col ">
 				{output.map((line, index) => (
 					<div

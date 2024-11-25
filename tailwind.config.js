@@ -14,7 +14,7 @@ export default {
 				"shadow-fade": "0px 0px 25px 8px currentColor",
 			},
 			colors: {
-				laal: "#e96268",
+				laal: "#CAC6BB",
 				dhursor: "#303030",
 			},
 			backgroundImage: {

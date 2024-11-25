@@ -46,7 +46,7 @@ const Navbar = () => {
 							<NavLink to="/">Home</NavLink>
 						</li>
 						<li>
-							<NavLink to="/about">About</NavLink>
+							<NavLink to="/skills">Skills</NavLink>
 						</li>
 						<li>
 							<NavLink to="/projects">Projects</NavLink>
@@ -79,7 +79,6 @@ const Navbar = () => {
 						{theme === "light" ? (
 							<Sun
 								size={19}
-								className="animate_spinning"
 								strokeWidth={1.8}
 							/>
 						) : (

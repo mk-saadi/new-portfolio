@@ -61,6 +61,8 @@
 
 // export default Intro;
 
+import img from "../assets/me.png";
+
 const Intro = () => {
 	return (
 		<div>

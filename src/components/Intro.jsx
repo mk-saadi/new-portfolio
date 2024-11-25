@@ -66,7 +66,7 @@ import img from "../assets/me.png";
 const Intro = () => {
 	return (
 		<div>
-			<h1>Muhiuddin Khaled</h1>
+			<h1 className="text-dhusor dark:text-gray-300">Muhiuddin Khaled</h1>
 		</div>
 	);
 };

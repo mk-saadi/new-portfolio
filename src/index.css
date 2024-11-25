@@ -108,3 +108,7 @@ html:before {
 .glowing {
 	text-shadow: currentColor 0px 0px 5px, currentColor 0px 0px 10px;
 }
+.navlinks a.active {
+	/* border-bottom: 2px solid currentColor; */
+	font-weight: 600;
+}

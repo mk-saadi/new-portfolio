@@ -6,6 +6,7 @@ export default {
 		fontFamily: {
 			sans: ["karla"],
 			serif: ["inter"],
+			mono: ["Oswald"],
 		},
 		extend: {
 			boxShadow: {
@@ -15,13 +16,21 @@ export default {
 			},
 			colors: {
 				laal: "#CAC6BB",
-				dhursor: "#303030",
+				dhusor: "#303030",
 			},
 			backgroundImage: {
 				"wavy-light":
 					"repeating-radial-gradient(circle at 0 0, transparent 0, #e0e0e0 10px), repeating-linear-gradient(#e0e0e0, hwb(0 99% 7%))",
 				"wavy-dark":
 					"repeating-radial-gradient(circle at 0 0, transparent 0, #111111 12px), repeating-linear-gradient(#111111, hwb(0 17% 91% / 0.7))",
+			},
+			// width: {
+			// 	xll: "1440px",
+			// 	xxl: "1920px",
+			// },
+			screens: {
+				xll: "1440px",
+				xxl: "1920px",
 			},
 		},
 	},

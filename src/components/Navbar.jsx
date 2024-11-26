@@ -56,7 +56,7 @@ const Navbar = () => {
 		// 				</li>
 		// 			</ul>
 		// 		</nav>
-		// 		<h1 className="text-4xl font-extrabold text-laal">
+		// 		<h1 className="text-4xl font-extrabold text-biscuit">
 		// 			M<span className="text-[#303030]">K</span>
 		// 		</h1>
 		// 		<div className="flex text-[#303030] text-base dark:text-gray-300 items-center gap-x-8">
@@ -111,7 +111,7 @@ const Navbar = () => {
 				</nav>
 
 				{/* Centered H1 */}
-				<h1 className="absolute text-4xl font-extrabold -translate-x-1/2 left-1/2 text-laal">
+				<h1 className="absolute text-4xl font-extrabold -translate-x-1/2 left-1/2 text-biscuit">
 					M<span className="text-dhusor dark:text-gray-300">K</span>
 				</h1>
 

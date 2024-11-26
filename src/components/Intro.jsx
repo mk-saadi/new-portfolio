@@ -17,7 +17,7 @@
 // 				<br /> One Line of Code at a Time
 // 			</h2>
 // 			<div className="relative mt-5 w-fit">
-// 				<div className="absolute z-10 -bottom-3  w-full h-10 dark:bg-gray-100/5 dark:shadow-gray-300/10 shadow-shadow-fade bg-laal/20 -rotate-[1deg] rounded-xl -right-3" />
+// 				<div className="absolute z-10 -bottom-3  w-full h-10 dark:bg-gray-100/5 dark:shadow-gray-300/10 shadow-shadow-fade bg-biscuit/20 -rotate-[1deg] rounded-xl -right-3" />
 // 				<h1 className="relative z-20 text-6xl font-semibold">Muhiuddin Khaled</h1>
 // 			</div>
 // 			<h3 className="mt-8 max-w-prose">
@@ -28,8 +28,8 @@
 // 				<>
 // 					<h2 className="text-base text-center">Building Digital Experiences</h2>
 // 					<div className="relative mt-4 font-serif w-fit">
-// 						<div className="absolute z-10 -bottom-3  w-[65ch] h-10 dark:bg-gray-100/5 dark:shadow-laal/50 shadow-laal/50 shadow bg-gradient-to-t from-laal/40 to-laal/20 -rotate-[1deg] rounded-xl mx-10 right-0" />
-// 						<h1 className="relative z-20 text-6xl font-extrabold text-gray-900 glowing dark:text-laal">
+// 						<div className="absolute z-10 -bottom-3  w-[65ch] h-10 dark:bg-gray-100/5 dark:shadow-biscuit/50 shadow-biscuit/50 shadow bg-gradient-to-t from-biscuit/40 to-biscuit/20 -rotate-[1deg] rounded-xl mx-10 right-0" />
+// 						<h1 className="relative z-20 text-6xl font-extrabold text-gray-900 glowing dark:text-biscuit">
 // 							Hello! I&apos;m Muhiuddin Khaled.
 // 						</h1>
 // 					</div>
@@ -39,7 +39,7 @@
 // 					</h3>
 // 				</>
 // 				{/* <div className="relative">
-// 					<div className="absolute bottom-0 right-0 z-10 w-full h-full rounded-full dark:bg-gray-100/5 shadow-shadow-fade bg-laal/50" />
+// 					<div className="absolute bottom-0 right-0 z-10 w-full h-full rounded-full dark:bg-gray-100/5 shadow-shadow-fade bg-biscuit/50" />
 // 					<img
 // 						src={avater}
 // 						alt=""
@@ -50,7 +50,7 @@
 // 			{/* <div className="flex items-end justify-center mt-48">
 // 				<button
 // 					onClick={handleScrollDown}
-// 					className="text-laal focus:outline-0 animate_bouncing"
+// 					className="text-biscuit focus:outline-0 animate_bouncing"
 // 				>
 // 					<ChevronDownIcon size={35} />
 // 				</button>

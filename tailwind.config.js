@@ -15,8 +15,9 @@ export default {
 				"shadow-fade": "0px 0px 25px 8px currentColor",
 			},
 			colors: {
-				laal: "#CAC6BB",
+				biscuit: "#CAC6BB",
 				dhusor: "#303030",
+				para: "#555555",
 			},
 			backgroundImage: {
 				"wavy-light":

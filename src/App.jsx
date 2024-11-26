@@ -1,50 +1,94 @@
 import Intro from "./components/Intro";
 import img from "./assets/me.png";
 import { PanelsTopLeft, Server } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const App = () => {
 	return (
 		<div className="flex flex-col items-center justify-between w-full h-full">
-			<h1 className="flex items-center justify-center mb-6 font-mono text-6xl font-semibold tracking-tight xll:mt-28 gap-x-4 text-dhusor dark:text-gray-300">
+			<h1 className="flex items-center justify-center mb-6 font-mono text-6xl font-semibold tracking-tight xll:mt-28 gap-x-4 text-dhusor dark:text-gray-200">
 				<span className="border-b-4 border-dhusor dark:border-gray-300">Muhiuddin</span> Khaled
 			</h1>
-			<div className="grid h-full grid-cols-4 font-mono text-dhusor dark:text-gray-300">
+			<div className="grid h-full grid-cols-4 font-mono text-dhusor dark:text-gray-200">
 				{/* first column */}
-				<div className="col-span-1">
-					<h2>Services</h2>
-					<ul className="flex flex-col gap-y-2">
+				<div className="col-span-1 xl:mt-[4rem]">
+					<h2 className="text-2xl font-medium">Services</h2>
+					<ul className="flex flex-col mt-8 gap-y-6">
 						<li>
-							<div className="flex items-center justify-start">
-								<span className="p-1 bg-white rounded-sm">
+							<div className="flex items-center justify-start mb-2 gap-x-3">
+								<span className="p-2 bg-white rounded-sm dark:text-gray-300 dark:bg-gray-950">
 									<PanelsTopLeft className="te" />
 								</span>
-								<h3>Frontend</h3>
+								<h3 className="text-lg font-medium">Frontend</h3>
+							</div>
+							<div className="ml-2">
+								<p className="font-sans text-base text-para dark:text-gray-400">
+									Some of the frontend technologies I use:
+								</p>
+								<ul className="grid grid-cols-2 font-sans text-base text-para dark:text-gray-400">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>React</li>
+									<li>NextJS</li>
+								</ul>
 							</div>
 						</li>
 						<li>
-							<div className="flex items-center justify-start">
-								<span className="p-1 bg-white rounded-sm">
+							<div className="flex items-center justify-start mb-2 gap-x-3">
+								<span className="p-2 bg-white rounded-sm dark:text-gray-300 dark:bg-gray-950">
 									<Server className="te" />
 								</span>
-								<h3>Backend</h3>
+								<h3 className="text-lg font-medium">Backend</h3>
+							</div>
+							<div className="ml-2">
+								<p className="font-sans text-base text-para dark:text-gray-400">
+									Some of the backend technologies I use:
+								</p>
+								<ul className="grid grid-cols-2 font-sans text-base text-para dark:text-gray-400">
+									<li>Express</li>
+									<li>Node</li>
+									<li>MongoDB</li>
+									<li>Firebase</li>
+								</ul>
 							</div>
 						</li>
 					</ul>
 				</div>
 				{/* second column */}
 				<div className="relative flex items-baseline justify-center w-full h-full col-span-2">
-					<div className="pointer-events-none select-none">
-						<div className="absolute bottom-0 right-0 z-10 w-full rounded-t-2xl h-96 bg-laal" />
+					<div className="relative pointer-events-none select-none">
+						{/* Wrap the image and absolute element in a relative container */}
 						<img
 							src={img}
 							alt=""
-							className="relative z-20 object-cover w-auto h-[32rem] "
+							className="relative dark:grayscale z-20 object-cover w-auto h-[32rem]"
 						/>
+						<div className="absolute inset-0 z-10 mt-32 border-t shadow-xl border-white/20 rounded-t-2xl bg-biscuit dark:bg-black" />
 					</div>
 				</div>
 				{/* third column */}
-				<div className="col-span-1">
-					<p>Web specialist based Bangladesh</p>
+				<div className="col-span-1 xl:mt-[4rem]">
+					<h2 className="text-2xl font-medium font">Web specialist based Bangladesh</h2>
+					<p className="mt-8 font-sans text-base text-para dark:text-gray-400">
+						As a MERN stack web developer, I&apos;m on a mission to create digital experiences
+						that leave a lasting impact.
+						<br />
+						<br />
+						My focus is on building applications that not only meet functional requirements but
+						also provide a delightful user experience.
+					</p>
+					<div className="flex items-center justify-start mt-6 gap-x-4">
+						<Link
+							to="/contacts"
+							className="px-8 py-2 font-sans text-lg font-medium text-white border-t rounded-sm focus:outline-0 border-white/20 bg-dhusor dark:bg-gray-950"
+						>
+							Hire me
+						</Link>
+						<button className="px-8 py-2 font-sans text-lg font-medium text-white border-t rounded-sm focus:outline-0 border-white/20 bg-dhusor dark:bg-gray-950">
+							Resume
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

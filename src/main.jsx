@@ -4,7 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ToastProvider } from "../../../npm package/react-toast-master/src/ToastProvider";
 import App from "./App";
-import About from "./pages/About";
+import Featured from "./pages/Featured";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import Layout from "./pages/Layout";
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
 				element: <App />,
 			},
 			{
-				path: "/skills",
-				element: <About />,
+				path: "/featured",
+				element: <Featured />,
 			},
 			{
 				path: "/projects",

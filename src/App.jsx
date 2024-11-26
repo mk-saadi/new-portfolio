@@ -1,12 +1,13 @@
 import Intro from "./components/Intro";
 import img from "./assets/me.png";
-import { PanelsTopLeft, Server } from "lucide-react";
+import { Download, PanelsTopLeft, Send, Server } from "lucide-react";
 import { Link } from "react-router-dom";
+import pdf from "./assets/resume.pdf";
 
 const App = () => {
 	return (
 		<div className="flex flex-col items-center justify-between w-full h-full">
-			<h1 className="flex items-center justify-center mb-6 font-mono text-6xl font-semibold tracking-tight xll:mt-28 gap-x-4 text-dhusor dark:text-gray-200">
+			<h1 className="flex items-center justify-center mb-6 font-mono text-6xl font-semibold tracking-tight xll:mt-16 gap-x-4 text-dhusor dark:text-gray-200">
 				<span className="border-b-4 border-dhusor dark:border-gray-300">Muhiuddin</span> Khaled
 			</h1>
 			<div className="grid h-full grid-cols-4 font-mono text-dhusor dark:text-gray-200">
@@ -16,36 +17,38 @@ const App = () => {
 					<ul className="flex flex-col mt-8 gap-y-6">
 						<li>
 							<div className="flex items-center justify-start mb-2 gap-x-3">
-								<span className="p-2 bg-white rounded-sm dark:text-gray-300 dark:bg-gray-950">
+								<span className="p-2 bg-white border-t rounded-sm dark:border-white/20 dark:text-gray-300 dark:bg-gray-950">
 									<PanelsTopLeft className="te" />
 								</span>
 								<h3 className="text-lg font-medium">Frontend</h3>
 							</div>
-							<div className="ml-2">
+							<div className="ml-6">
 								<p className="font-sans text-base text-para dark:text-gray-400">
 									Some of the frontend technologies I use:
 								</p>
-								<ul className="grid grid-cols-2 font-sans text-base text-para dark:text-gray-400">
+								<ul className="grid grid-cols-2 font-sans text-base list-disc text-para dark:text-gray-400">
 									<li>HTML</li>
 									<li>CSS</li>
 									<li>JavaScript</li>
 									<li>React</li>
 									<li>NextJS</li>
+									<li>Tailwind</li>
+									<li>BootStrap</li>
 								</ul>
 							</div>
 						</li>
 						<li>
 							<div className="flex items-center justify-start mb-2 gap-x-3">
-								<span className="p-2 bg-white rounded-sm dark:text-gray-300 dark:bg-gray-950">
+								<span className="p-2 bg-white border-t rounded-sm dark:border-white/20 dark:text-gray-300 dark:bg-gray-950">
 									<Server className="te" />
 								</span>
 								<h3 className="text-lg font-medium">Backend</h3>
 							</div>
-							<div className="ml-2">
+							<div className="ml-6">
 								<p className="font-sans text-base text-para dark:text-gray-400">
 									Some of the backend technologies I use:
 								</p>
-								<ul className="grid grid-cols-2 font-sans text-base text-para dark:text-gray-400">
+								<ul className="grid grid-cols-2 font-sans text-base list-disc text-para dark:text-gray-400">
 									<li>Express</li>
 									<li>Node</li>
 									<li>MongoDB</li>
@@ -69,7 +72,7 @@ const App = () => {
 				</div>
 				{/* third column */}
 				<div className="col-span-1 xl:mt-[4rem]">
-					<h2 className="text-2xl font-medium font">Web specialist based Bangladesh</h2>
+					<h2 className="font-mono text-2xl font-medium">Web specialist based in Bangladesh</h2>
 					<p className="mt-8 font-sans text-base text-para dark:text-gray-400">
 						As a MERN stack web developer, I&apos;m on a mission to create digital experiences
 						that leave a lasting impact.
@@ -81,11 +84,21 @@ const App = () => {
 					<div className="flex items-center justify-start mt-6 gap-x-4">
 						<Link
 							to="/contacts"
-							className="px-8 py-2 font-sans text-lg font-medium text-white border-t rounded-sm focus:outline-0 border-white/20 bg-dhusor dark:bg-gray-950"
+							className="flex items-center justify-center px-6 py-2 font-sans text-lg font-medium text-white border-t border-gray-900 rounded-sm whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 						>
+							<Send size={20} />
 							Hire me
 						</Link>
-						<button className="px-8 py-2 font-sans text-lg font-medium text-white border-t rounded-sm focus:outline-0 border-white/20 bg-dhusor dark:bg-gray-950">
+						<button
+							onClick={() => {
+								const link = document.createElement("a");
+								link.href = pdf;
+								link.download = "Muhiuddin_Khaled.pdf";
+								link.click();
+							}}
+							className="flex items-center justify-center px-6 py-2 font-sans text-lg font-medium text-white border-t border-gray-900 rounded-sm whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+						>
+							<Download size={20} />
 							Resume
 						</button>
 					</div>

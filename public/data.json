@@ -1,0 +1,86 @@
+[
+	{
+		"id": 1,
+		"name": "AnimeFig",
+		"stack": "Full-Stack",
+		"image": "./assets/AnimeFig.png",
+		"link": "https://animefig-3626c.web.app/",
+		"github_client": "https://github.com/mk-saadi/animefig",
+		"github_server": "https://github.com/mk-saadi/animefig-Server",
+		"des": "AnimeFig is an anime figurine buying website. It allows users to view and buy anime figurines. It is a full stack web application built with React.js, Node.js, Express.js, MongoDB, and Firebase.",
+		"tech_frontend": "React.js, Vite, TailwindCSS, Swiper, react-awesome-reveal, axios, react-router-dom, react-toast-master, browser-image-compression",
+		"tech_backend": "Node.js, Express.js, MongoDB, Firebase, Stripe"
+	},
+	{
+		"id": 2,
+		"name": "react-toast-master",
+		"stack": "NPM Package",
+		"image": "./assets/npm.png",
+		"link": "https://www.npmjs.com/package/react-toast-master",
+		"github_client": "https://github.com/mk-saadi/react-toast-master",
+		"github_server": "",
+		"des": "react-toast-master is a simple and easy to use component that allows you to display notifications in your React application.",
+		"tech_frontend": "React.js",
+		"tech_backend": ""
+	},
+	{
+		"id": 3,
+		"name": "Toast-Demo",
+		"stack": "Frontend",
+		"image": "./assets/doc.png",
+		"link": "https://react-toast-master.netlify.app/",
+		"github_client": "https://github.com/mk-saadi/Toast-website",
+		"github_server": "",
+		"des": "Documentation website for react-toast-master NPM package. It is built with React.js and Vite.",
+		"tech_frontend": "React.js, Vite, TailwindCSS, react-router-dom, react-toast-master",
+		"tech_backend": ""
+	},
+	{
+		"id": 4,
+		"name": "Khaled",
+		"stack": "Full-Stack",
+		"image": "./assets/gr.png",
+		"link": "https://fir-auth-b5c3a.web.app/login",
+		"github_client": "https://github.com/mk-saadi/gr-client",
+		"github_server": "https://github.com/mk-saadi/gr-server",
+		"des": "It is a full-stack website where you can add, edit and delete users. It is built with React.js, Node.js, Express.js, MongoDB, and Firebase.",
+		"tech_frontend": "React.js, Vite, TailwindCSS, react-awesome-reveal, axios, react-router-dom",
+		"tech_backend": "Node.js, Express.js, MongoDB, Firebase"
+	},
+	{
+		"id": 5,
+		"name": "Pinash",
+		"stack": "Frontend",
+		"image": "./assets/Task.png",
+		"link": "https://universal-008.web.app/",
+		"github_client": "https://github.com/mk-saadi/pinash-frontend",
+		"github_server": "",
+		"des": "A simple responsive frontend website.",
+		"tech_frontend": "React.js, Vite, TailwindCSS, react-router-dom, Swiper",
+		"tech_backend": ""
+	},
+	{
+		"id": 6,
+		"name": "Geo",
+		"stack": "Frontend",
+		"image": "./assets/geo.png",
+		"link": "https://grand-medovik-3fb536.netlify.app/",
+		"github_client": "https://github.com/mk-saadi/geometry-genius",
+		"github_server": "",
+		"des": "A simple responsive frontend website to solve geometry problems.",
+		"tech_frontend": "HTML, JavaScript, TailwindCSS",
+		"tech_backend": ""
+	},
+	{
+		"id": 7,
+		"name": "ProHub",
+		"stack": "Frontend",
+		"image": "./assets/ass-8.png",
+		"link": "https://peppy-meringue-c00170.netlify.app/",
+		"github_client": "https://github.com/mk-saadi/prohub",
+		"github_server": "",
+		"des": "A simple responsive frontend website.",
+		"tech_frontend": "React.js, Vite, TailwindCSS",
+		"tech_backend": ""
+	}
+]

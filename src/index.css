@@ -22,7 +22,7 @@ html:before {
 	pointer-events: none;
 	user-select: none;
 	background-image: url("./assets/WhiteNoiseDithering.png");
-	opacity: 0.035;
+	opacity: 0.045;
 	animation: noise 8s steps(10) infinite;
 }
 @keyframes noise {
@@ -109,6 +109,5 @@ html:before {
 	text-shadow: currentColor 0px 0px 5px, currentColor 0px 0px 10px;
 }
 .navlinks a.active {
-	/* border-bottom: 2px solid currentColor; */
-	font-weight: 600;
+	font-weight: 700;
 }

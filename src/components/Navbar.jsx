@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Sun, Moon, Linkedin, Github, Twitter } from "lucide-react";
+import { Sun, Moon, Linkedin, Github, Twitter, HomeIcon, FolderOpenDot, Send, Sparkle } from "lucide-react";
 import useScroll from "./useScroll";
 import { NavLink } from "react-router-dom";
 
@@ -92,20 +92,59 @@ const Navbar = () => {
 		// 	</div>
 		// </header>
 		<header className="w-full duration-300">
-			<div className="relative flex items-center justify-between w-full px-16 py-2 text-dhusor dark:text-white">
+			<div className="relative flex items-center justify-between w-full px-10 py-2 text-dhusor dark:text-white">
 				<nav className="navlinks">
 					<ul className="flex items-center justify-center text-base font-normal text-dhusor dark:text-gray-300 gap-x-8">
 						<li>
-							<NavLink to="/">Home</NavLink>
+							<NavLink
+								to="/"
+								className="flex items-center justify-center gap-x-2"
+							>
+								<HomeIcon
+									strokeWidth={1.8}
+									size={20}
+								/>
+								Home
+							</NavLink>
 						</li>
-						<li>
+						{/* <li>
 							<NavLink to="/skills">Skills</NavLink>
+						</li> */}
+						<li>
+							<NavLink
+								to="/featured"
+								className="flex items-center justify-center gap-x-2"
+							>
+								<Sparkle
+									strokeWidth={1.8}
+									size={20}
+								/>
+								Featured
+							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/projects">Projects</NavLink>
+							<NavLink
+								to="/projects"
+								className="flex items-center justify-center gap-x-2"
+							>
+								<FolderOpenDot
+									strokeWidth={1.8}
+									size={20}
+								/>
+								Projects
+							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/contacts">Contacts</NavLink>
+							<NavLink
+								to="/contacts"
+								className="flex items-center justify-center gap-x-2"
+							>
+								<Send
+									strokeWidth={1.8}
+									size={20}
+								/>
+								Contacts
+							</NavLink>
 						</li>
 					</ul>
 				</nav>
@@ -116,7 +155,7 @@ const Navbar = () => {
 				</h1>
 
 				{/* Icons Section */}
-				<div className="flex items-center gap-x-8 text-[#303030] text-base dark:text-gray-300">
+				<div className="flex items-center gap-x-8 text-[#303030] dark:text-gray-300">
 					<a href="https://www.linkedin.com/in/muhiuddin-khaled-46a0aa242/">
 						<Linkedin
 							size={19}

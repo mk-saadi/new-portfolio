@@ -31,7 +31,7 @@ const Projects = () => {
 											href={item.link}
 											target="_blank"
 											rel="noreferrer"
-											className="flex items-center justify-center h-full font-mono text-base text-center text-white gap-x-2"
+											className="flex items-center justify-center h-full font-sans text-base leading-5 text-center text-white gap-x-2"
 											// className="flex items-center justify-center h-full font-mono text-xl text-white gap-x-2"
 										>
 											{/* <ExternalLink size={20} /> Visit */}
@@ -50,7 +50,7 @@ const Projects = () => {
 									</h3>
 									<div className="flex flex-col items-center justify-end w-full font-mono xl:flex-row gap-x-1">
 										<a
-											className="flex items-center justify-center px-3 py-1 text-white border-t border-gray-900 rounded-sm focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+											className="flex items-center justify-center px-3 py-1 text-white duration-300 border-t rounded-sm shadow-md shadow-black/40 border-white/60 hover:bg-red-600 dark:hover:bg-red-600 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 											href={item.link}
 											title="visit link"
 											target="_blank"
@@ -59,7 +59,7 @@ const Projects = () => {
 											<Link size={19} />
 										</a>
 										<a
-											className="flex items-center justify-center px-3 py-1 text-white border-t border-gray-900 rounded-sm focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+											className="flex items-center justify-center px-3 py-1 text-white duration-300 border-t rounded-sm shadow-md shadow-black/40 border-white/60 hover:bg-red-600 dark:hover:bg-red-600 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 											href={item.github_client}
 											title="github client repository"
 											target="_blank"
@@ -69,7 +69,7 @@ const Projects = () => {
 										</a>
 										{item.tech_backend && (
 											<a
-												className="flex items-center justify-center px-3 py-1 text-white border-t border-gray-900 rounded-sm focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+												className="flex items-center justify-center px-3 py-1 text-white duration-300 border-t rounded-sm shadow-md shadow-black/40 border-white/60 hover:bg-red-600 dark:hover:bg-red-600 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 												href={item.github_server}
 												title="github server repository"
 												target="_blank"

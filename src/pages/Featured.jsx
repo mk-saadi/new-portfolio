@@ -66,12 +66,12 @@ const Featured = () => {
 									<div className="relative p-2">
 										<div className="flex flex-col h-[16.5rem] gap-y-1">
 											<div className="flex items-center justify-between">
-												<h3 className="font-mono text-2xl font-medium">
+												<h3 className="font-mono text-2xl font-medium ">
 													{item.name}
 												</h3>
 												<p className="text-base">{item.stack}</p>
 											</div>
-											<p className="text-sm leading-5">{item.des}</p>
+											<p className="text-sm leading-5 text-gray-200">{item.des}</p>
 											<p
 												className="line-clamp-1"
 												title={item.tech_frontend}
@@ -89,7 +89,7 @@ const Featured = () => {
 										</div>
 										<div className="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full font-mono gap-y-1">
 											<a
-												className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white border-t border-gray-900 rounded-sm whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+												className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t rounded-sm shadow-sm border-white/60 shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 												href={item.link}
 												target="_blank"
 												rel="noreferrer"
@@ -98,7 +98,7 @@ const Featured = () => {
 											</a>
 											<div className="flex items-center justify-center w-full gap-x-1">
 												<a
-													className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white border-t border-gray-900 rounded-sm whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+													className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t rounded-sm shadow-sm border-white/60 shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 													href={item.github_client}
 													target="_blank"
 													rel="noreferrer"
@@ -107,7 +107,7 @@ const Featured = () => {
 												</a>
 												{item.tech_backend && (
 													<a
-														className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white border-t border-gray-900 rounded-sm whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+														className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t rounded-sm shadow-sm border-white/60 shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 														href={item.github_server}
 														target="_blank"
 														rel="noreferrer"
@@ -169,7 +169,7 @@ const Featured = () => {
 									</div>
 									<div className="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full font-mono gap-y-1">
 										<a
-											className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white border-t border-gray-900 rounded-sm whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+											className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 											href={item.link}
 											target="_blank"
 											rel="noreferrer"
@@ -178,7 +178,7 @@ const Featured = () => {
 										</a>
 										<div className="flex items-center justify-center w-full gap-x-1">
 											<a
-												className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white border-t border-gray-900 rounded-sm whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+												className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 												href={item.github_client}
 												target="_blank"
 												rel="noreferrer"
@@ -188,7 +188,7 @@ const Featured = () => {
 
 											{item.tech_backend && (
 												<a
-													className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white border-t border-gray-900 rounded-sm whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+													className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 													href={item.github_server}
 													target="_blank"
 													rel="noreferrer"

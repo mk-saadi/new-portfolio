@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ToastProvider } from "../../../npm package/react-toast-master/src/ToastProvider";
+import { ToastProvider } from "react-toast-master";
 import App from "./App";
 import Featured from "./pages/Featured";
 import Projects from "./pages/Projects";

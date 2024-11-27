@@ -91,8 +91,9 @@ const Navbar = () => {
 		// 		</div>
 		// 	</div>
 		// </header>
-		<header className="w-full duration-300">
+		<header className="w-[100vw]">
 			<div className="relative flex items-center justify-between w-full px-10 py-2 text-dhusor dark:text-white">
+				<div className="w-[94.5vw] transform -translate-x-1/2 left-1/2 h-[1px] absolute bottom-0 dark:bg-white/10 bg-gray-900/10" />
 				<nav className="navlinks">
 					<ul className="flex items-center justify-center text-base font-normal text-dhusor dark:text-gray-300 gap-x-8">
 						<li>

@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Forward } from "lucide-react";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Contacts = () => {
 	const form = useRef();
@@ -29,57 +31,69 @@ const Contacts = () => {
 	};
 	return (
 		<div>
-			<div>
-				<form
-					ref={form}
-					onSubmit={sendEmail}
-					className="col-span-2 bg-[#1e2021] rounded-e-md p-6"
-				>
-					<p className="text-2xl text-[#579981] font-bold -ml-4">In Touch</p>
-					<div className="form-control">
-						<label className="text-[#579981] label-text font-semibold mb-2">Name</label>
-						<input
-							type="text"
-							name="from_name"
-							className="text-slate-300 input rounded-sm bg-[#4b5154] mb-3"
-						/>
-					</div>
-
-					<div className="form-control">
-						<label className="text-[#579981] label-text font-semibold mb-2">Email</label>
-						<input
-							type="email"
-							name="user_email"
-							className="input rounded-sm bg-[#4b5154] mb-3 text-slate-300"
-						/>
-					</div>
-
-					<div className="form-control">
-						<label className="text-[#579981] label-text font-semibold mb-2">Subject</label>
-						<input
-							className="text-slate-300 input rounded-sm bg-[#4b5154] mb-3"
-							type="text"
-							name="user_subject"
-						/>
-					</div>
-
-					<div className="form-control">
-						<label className="text-[#579981] label-text font-semibold mb-2">Message</label>
-						<textarea
-							name="message"
-							className="textarea textarea-lg rounded-sm bg-[#4b5154] mb-3 text-sm text-slate-300"
-						/>
-					</div>
-
-					<div className="flex justify-end mt-3">
-						<input
+			<Fade duration={2500}>
+				<div className="mb-2 text-para dark:text-gray-400">
+					<h2 className="font-mono text-3xl font-medium uppercase text-dhusor dark:text-gray-200">
+						Send me a message
+					</h2>
+					<p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+				</div>
+				<Slide direction="up">
+					<form
+						ref={form}
+						onSubmit={sendEmail}
+						className="flex flex-col justify-start gap-y-2 text-para dark:text-gray-400"
+					>
+						<div className="flex flex-col justify-start gap-y-1">
+							<label>Name</label>
+							<input
+								type="text"
+								name="from_name"
+								className="rounded-sm shadow-md focus:outline-0 text-slate-300 bg-black/40"
+							/>
+						</div>
+						<div className="flex flex-col justify-start gap-y-1">
+							<label>Email</label>
+							<input
+								type="email"
+								name="user_email"
+								className="rounded-sm shadow-md focus:outline-0 bg-black/40 text-slate-300"
+							/>
+						</div>
+						<div className="flex flex-col justify-start gap-y-1">
+							<label>Subject</label>
+							<input
+								className="rounded-sm shadow-md focus:outline-0 text-slate-300 bg-black/40"
+								type="text"
+								name="user_subject"
+							/>
+						</div>
+						<div className="flex flex-col justify-start gap-y-1">
+							<label>Message</label>
+							<textarea
+								name="message"
+								rows="8"
+								className="text-sm rounded-sm shadow-md focus:outline-0 bg-black/40 text-slate-300"
+							/>
+						</div>
+						<Slide direction="up">
+							<div className="flex justify-end mt-3">
+								{/* <input
 							type="submit"
 							value="Send"
-							className="mt-2 px-4 rounded-sm border-2 duration-200 border-[#579981] hover:border-[#f2754c] text-white bg-transparent cursor-pointer"
-						/>
-					</div>
-				</form>
-			</div>
+							className="flex items-center justify-center px-6 py-2 font-sans text-lg font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md cursor-pointer hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+						/> */}
+								<button
+									type="submit"
+									className="flex items-center justify-center px-6 py-2 font-sans text-lg font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md cursor-pointer hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+								>
+									<Forward /> Send
+								</button>
+							</div>
+						</Slide>
+					</form>
+				</Slide>
+			</Fade>
 		</div>
 	);
 };

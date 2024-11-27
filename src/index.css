@@ -22,7 +22,7 @@ html:before {
 	pointer-events: none;
 	user-select: none;
 	background-image: url("./assets/WhiteNoiseDithering.png");
-	opacity: 0.045;
+	opacity: 0.03;
 	animation: noise 8s steps(10) infinite;
 }
 @keyframes noise {

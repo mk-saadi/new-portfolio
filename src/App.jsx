@@ -10,26 +10,29 @@ const App = () => {
 		<Fade duration={2500}>
 			<div className="flex flex-col items-center justify-between w-full h-full">
 				<h1 className="flex items-center justify-center mb-6 font-mono text-6xl font-semibold tracking-tight xll:mt-16 gap-x-4 text-dhusor dark:text-gray-200">
-					<span className="border-b-4 border-dhusor dark:border-gray-300">Muhiuddin</span> Khaled
+					<span className="uppercase border-b-4 border-dhusor dark:border-gray-300">Muhiuddin</span>{" "}
+					Khaled
 				</h1>
 				<Slide direction="up">
 					<div className="grid h-full grid-cols-4 font-mono text-dhusor dark:text-gray-200">
 						{/* first column */}
 						<div className="col-span-1 xl:mt-[4rem]">
-							<h2 className="text-2xl font-medium">Services</h2>
-							<ul className="flex flex-col mt-8 gap-y-6">
+							<h2 className="text-2xl font-medium text-dhusor dark:text-gray-200">Services</h2>
+							<ul className="flex flex-col mt-4 gap-y-6">
 								<li>
-									<div className="flex items-center justify-start mb-2 gap-x-3">
+									<div className="flex items-center justify-start gap-x-3">
 										<span className="p-2 bg-white border-t rounded-sm dark:border-white/20 dark:text-gray-300 dark:bg-gray-950">
 											<PanelsTopLeft className="te" />
 										</span>
-										<h3 className="text-lg font-medium">Frontend</h3>
+										<h3 className="text-lg font-medium text-dhusor dark:text-gray-200">
+											Frontend
+										</h3>
 									</div>
-									<div className="ml-6">
+									<div className="">
 										<p className="font-sans text-base text-para dark:text-gray-400">
 											Some of the frontend technologies I use:
 										</p>
-										<ul className="grid grid-cols-2 font-sans text-base list-disc text-para dark:text-gray-400">
+										<ul className="grid grid-cols-2 font-sans text-base text-para dark:text-gray-400">
 											<li>HTML</li>
 											<li>CSS</li>
 											<li>JavaScript</li>
@@ -41,17 +44,19 @@ const App = () => {
 									</div>
 								</li>
 								<li>
-									<div className="flex items-center justify-start mb-2 gap-x-3">
+									<div className="flex items-center justify-start gap-x-3">
 										<span className="p-2 bg-white border-t rounded-sm dark:border-white/20 dark:text-gray-300 dark:bg-gray-950">
 											<Server className="te" />
 										</span>
-										<h3 className="text-lg font-medium">Backend</h3>
+										<h3 className="text-lg font-medium text-dhusor dark:text-gray-200">
+											Backend
+										</h3>
 									</div>
-									<div className="ml-6">
+									<div className="">
 										<p className="font-sans text-base text-para dark:text-gray-400">
 											Some of the backend technologies I use:
 										</p>
-										<ul className="grid grid-cols-2 font-sans text-base list-disc text-para dark:text-gray-400">
+										<ul className="grid grid-cols-2 font-sans text-base text-para dark:text-gray-400">
 											<li>Express</li>
 											<li>Node</li>
 											<li>MongoDB</li>
@@ -75,10 +80,10 @@ const App = () => {
 						</div>
 						{/* third column */}
 						<div className="col-span-1 xl:mt-[4rem]">
-							<h2 className="font-mono text-2xl font-medium">
+							<h2 className="font-mono text-2xl font-medium text-dhusor dark:text-gray-200">
 								Web specialist based in Bangladesh
 							</h2>
-							<p className="mt-8 font-sans text-base text-para dark:text-gray-400">
+							<p className="mt-4 font-sans text-base text-para dark:text-gray-400">
 								As a MERN stack web developer, I&apos;m on a mission to create digital
 								experiences that leave a lasting impact.
 								<br />

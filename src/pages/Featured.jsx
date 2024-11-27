@@ -26,7 +26,7 @@ const Featured = () => {
 	return (
 		<Fade duration={2500}>
 			<div className="h-full overflow-hidden text-para dark:text-gray-400">
-				<h2 className="font-mono text-3xl font-medium uppercase">Featured</h2>
+				<h2 className="font-mono text-3xl font-medium uppercase dark:text-gray-200">Featured</h2>
 				<p className="mb-2">Below are 3 of my best projects</p>
 				<Slide
 					direction="up"
@@ -44,15 +44,15 @@ const Featured = () => {
 							{data.map((item) => (
 								<div
 									key={item.id}
-									className="flex flex-col overflow-hidden border rounded-md shadow-md group bg-black/40 border-gray-900/10 dark:border-white/10"
+									className="flex flex-col overflow-hidden border rounded-sm shadow-md group bg-black/20 border-gray-900/10 dark:border-white/10"
 								>
-									<div className="relative w-full h-56 overflow-hidden rounded-md cursor-pointer">
-										<div className="absolute inset-0 duration-300 rounded-md opacity-0 backdrop-blur-sm bg-black/50 group-hover:opacity-100">
+									<div className="relative w-full h-56 overflow-hidden rounded-sm cursor-pointer">
+										<div className="absolute inset-0 duration-300 rounded-sm opacity-0 backdrop-blur-sm bg-black/50 group-hover:opacity-100">
 											<a
 												href={item.link}
 												target="_blank"
 												rel="noreferrer"
-												className="flex items-center justify-center h-full font-mono text-2xl text-white gap-x-2"
+												className="flex items-center justify-center h-full font-mono text-2xl text-gray-200 gap-x-2"
 											>
 												<ExternalLink size={26} /> Visit
 											</a>
@@ -60,27 +60,27 @@ const Featured = () => {
 										<img
 											src={item.image}
 											alt={item.name}
-											className="object-cover rounded-md"
+											className="object-cover rounded-sm"
 										/>
 									</div>
 									<div className="relative p-2">
-										<div className="flex flex-col h-[16.5rem] gap-y-1">
+										<div className="flex flex-col text-para dark:text-gray-400 h-[16.5rem] gap-y-1">
 											<div className="flex items-center justify-between">
-												<h3 className="font-mono text-2xl font-medium ">
+												<h3 className="font-mono text-2xl font-medium text-dhusor dark:text-gray-200">
 													{item.name}
 												</h3>
-												<p className="text-base">{item.stack}</p>
+												<p className="text-base ">{item.stack}</p>
 											</div>
-											<p className="text-sm leading-5 text-gray-200">{item.des}</p>
+											<p className="text-sm leading-5 ">{item.des}</p>
 											<p
-												className="line-clamp-1"
+												className=" line-clamp-1"
 												title={item.tech_frontend}
 											>
 												Frontend: {item.tech_frontend}
 											</p>
 											{item.tech_backend && (
 												<p
-													className="line-clamp-1"
+													className=" line-clamp-1"
 													title={item.tech_backend}
 												>
 													Backend: {item.tech_backend}
@@ -126,10 +126,10 @@ const Featured = () => {
 						{data.map((item) => (
 							<div
 								key={item.id}
-								className="flex flex-col overflow-hidden border rounded-md border-gray-900/10 dark:border-white/10"
+								className="flex flex-col overflow-hidden border rounded-sm border-gray-900/10 dark:border-white/10"
 							>
-								<div className="relative w-full h-56 overflow-hidden rounded-md cursor-pointer group">
-									<div className="absolute inset-0 duration-300 rounded-md opacity-0 backdrop-blur-sm bg-black/50 group-hover:opacity-100">
+								<div className="relative w-full h-56 overflow-hidden rounded-sm cursor-pointer group">
+									<div className="absolute inset-0 duration-300 rounded-sm opacity-0 backdrop-blur-sm bg-black/50 group-hover:opacity-100">
 										<a
 											href={item.link}
 											target="_blank"
@@ -142,7 +142,7 @@ const Featured = () => {
 									<img
 										src={item.image}
 										alt={item.name}
-										className="object-cover rounded-md"
+										className="object-cover rounded-sm"
 									/>
 								</div>
 								<div className="relative p-2">

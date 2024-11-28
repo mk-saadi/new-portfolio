@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Forward } from "lucide-react";
 import { Fade, Slide } from "react-awesome-reveal";

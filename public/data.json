@@ -73,7 +73,7 @@
 	},
 	{
 		"id": 7,
-		"name": "ProHub",
+		"name": "ProNet",
 		"stack": "Frontend",
 		"image": "./assets/ass-8.png",
 		"link": "https://peppy-meringue-c00170.netlify.app/",

@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Link } from "lucide-react";
+import { ExternalLink, Github, Link, Server } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 
@@ -39,7 +39,6 @@ const Featured = () => {
 							<div>Loading</div>
 						</div>
 					) : (
-						// Your data rendering
 						<div className="grid grid-cols-3 gap-x-4">
 							{data.map((item) => (
 								<div
@@ -87,121 +86,45 @@ const Featured = () => {
 												</p>
 											)}
 										</div>
-										<div className="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full font-mono gap-y-1">
-											<a
-												className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t rounded-sm shadow-sm border-white/60 shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
-												href={item.link}
-												target="_blank"
-												rel="noreferrer"
-											>
-												<Link size={20} /> Link
-											</a>
-											<div className="flex items-center justify-center w-full gap-x-1">
-												<a
-													className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t rounded-sm shadow-sm border-white/60 shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
-													href={item.github_client}
-													target="_blank"
-													rel="noreferrer"
-												>
-													<Github size={20} /> Client
-												</a>
-												{item.tech_backend && (
+										<div className="absolute bottom-0 left-0 w-full font-mono ">
+											<Slide direction="up">
+												<div className="flex flex-col items-center justify-center w-full gap-y-1">
 													<a
 														className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t rounded-sm shadow-sm border-white/60 shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
-														href={item.github_server}
+														href={item.link}
 														target="_blank"
 														rel="noreferrer"
 													>
-														<Github size={20} /> Server
+														<Link size={20} /> Link
 													</a>
-												)}
-											</div>
+													<div className="flex items-center justify-center w-full gap-x-1">
+														<a
+															className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t rounded-sm shadow-sm border-white/60 shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+															href={item.github_client}
+															target="_blank"
+															rel="noreferrer"
+														>
+															<Github size={20} /> Client
+														</a>
+														{item.tech_backend && (
+															<a
+																className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t rounded-sm shadow-sm border-white/60 shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+																href={item.github_server}
+																target="_blank"
+																rel="noreferrer"
+															>
+																<Server size={20} /> Server
+															</a>
+														)}
+													</div>
+												</div>
+											</Slide>
 										</div>
 									</div>
 								</div>
 							))}
 						</div>
 					)}
-					{/* <div className="grid grid-cols-3 gap-x-4">
-						{data.map((item) => (
-							<div
-								key={item.id}
-								className="flex flex-col overflow-hidden border rounded-sm border-gray-900/10 dark:border-white/10"
-							>
-								<div className="relative w-full h-56 overflow-hidden rounded-sm cursor-pointer group">
-									<div className="absolute inset-0 duration-300 rounded-sm opacity-0 backdrop-blur-sm bg-black/50 group-hover:opacity-100">
-										<a
-											href={item.link}
-											target="_blank"
-											rel="noreferrer"
-											className="flex items-center justify-center h-full font-mono text-2xl text-white gap-x-2"
-										>
-											<ExternalLink size={26} /> Visit
-										</a>
-									</div>
-									<img
-										src={item.image}
-										alt={item.name}
-										className="object-cover rounded-sm"
-									/>
-								</div>
-								<div className="relative p-2">
-									<div className="flex flex-col h-[16.5rem] gap-y-1">
-										<div className="flex items-center justify-between">
-											<h3 className="font-mono text-2xl font-medium">{item.name}</h3>
-											<p className="text-base">{item.stack}</p>
-										</div>
-										<p className="text-sm leading-5">{item.des}</p>
-										<p
-											className="line-clamp-1"
-											title={item.tech_frontend}
-										>
-											Frontend: {item.tech_frontend}
-										</p>
-										{item.tech_backend && (
-											<p
-												className="line-clamp-1"
-												title={item.tech_backend}
-											>
-												Backend: {item.tech_backend}
-											</p>
-										)}
-									</div>
-									<div className="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full font-mono gap-y-1">
-										<a
-											className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
-											href={item.link}
-											target="_blank"
-											rel="noreferrer"
-										>
-											<Link size={20} /> Link
-										</a>
-										<div className="flex items-center justify-center w-full gap-x-1">
-											<a
-												className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
-												href={item.github_client}
-												target="_blank"
-												rel="noreferrer"
-											>
-												<Github size={20} /> Client
-											</a>
-
-											{item.tech_backend && (
-												<a
-													className="flex items-center justify-center w-full py-2 font-sans text-base font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md shadow-black/40 hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
-													href={item.github_server}
-													target="_blank"
-													rel="noreferrer"
-												>
-													<Github size={20} /> Server
-												</a>
-											)}
-										</div>
-									</div>
-								</div>
-							</div>
-						))}
-					</div> */}
 				</Slide>
 			</div>
 		</Fade>

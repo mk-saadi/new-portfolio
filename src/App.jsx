@@ -69,7 +69,6 @@ const App = () => {
 						{/* second column */}
 						<div className="relative flex items-baseline justify-center w-full h-full col-span-2">
 							<div className="relative pointer-events-none select-none">
-								{/* Wrap the image and absolute element in a relative container */}
 								<img
 									src={img}
 									alt=""

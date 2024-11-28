@@ -50,7 +50,7 @@ const Projects = () => {
 									</div>
 									<Slide direction="up">
 										<div className="flex items-center justify-between p-2 text-gray-200 dark:text-gray-400">
-											<h3 className="font-mono text-base font-medium dark:text-gray-200 whitespace-nowrap">
+											<h3 className="font-mono text-base font-medium text-dhusor dark:text-gray-200 whitespace-nowrap">
 												{item.name}
 											</h3>
 											<div className="flex flex-col items-center justify-end w-full font-mono xl:flex-row gap-x-1">

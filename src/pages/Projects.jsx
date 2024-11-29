@@ -12,7 +12,10 @@ const Projects = () => {
 	}, []);
 
 	return (
-		<Fade duration={2500}>
+		<Fade
+			duration={2500}
+			triggerOnce
+		>
 			<div className="overflow-y-hidden">
 				<div className="mb-2 text-para dark:text-gray-400">
 					<h2 className="font-mono text-3xl font-medium uppercase dark:text-gray-200">Projects</h2>
@@ -21,9 +24,10 @@ const Projects = () => {
 				<Slide
 					direction="up"
 					className="overflow-y-hidden"
+					triggerOnce
 				>
 					<div className="flex flex-col items-center justify-center overflow-y-hidden">
-						<div className="grid grid-cols-4 gap-2">
+						<div className="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-4">
 							{data.map((item) => (
 								<div
 									key={item.id}
@@ -48,12 +52,15 @@ const Projects = () => {
 											className="object-cover mb-4 rounded-sm w-fit h-fit"
 										/>
 									</div>
-									<Slide direction="up">
+									<Slide
+										direction="up"
+										triggerOnce
+									>
 										<div className="flex items-center justify-between p-2 text-gray-200 dark:text-gray-400">
 											<h3 className="font-mono text-base font-medium text-dhusor dark:text-gray-200 whitespace-nowrap">
 												{item.name}
 											</h3>
-											<div className="flex flex-col items-center justify-end w-full font-mono xl:flex-row gap-x-1">
+											<div className="flex flex-row items-center justify-end w-full font-mono xl:flex-row gap-x-1">
 												<a
 													className="flex items-center justify-center px-3 py-1 text-white duration-300 border-t rounded-sm shadow-md shadow-black/40 border-white/60 hover:bg-red-600 dark:hover:bg-red-600 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
 													href={item.link}

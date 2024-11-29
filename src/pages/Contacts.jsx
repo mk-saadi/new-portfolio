@@ -51,14 +51,20 @@ const Contacts = () => {
 	};
 	return (
 		<div>
-			<Fade duration={2500}>
+			<Fade
+				duration={2500}
+				triggerOnce
+			>
 				<div className="mb-2 text-para dark:text-gray-400">
 					<h2 className="font-mono text-3xl font-medium uppercase text-dhusor dark:text-gray-200">
 						Send me a message
 					</h2>
 					<p>Got a question or proposal, or just want to say hello? Go ahead.</p>
 				</div>
-				<Slide direction="up">
+				<Slide
+					direction="up"
+					triggerOnce
+				>
 					<form
 						ref={form}
 						onSubmit={sendEmail}
@@ -96,7 +102,10 @@ const Contacts = () => {
 								className="px-2 py-1 text-white rounded-sm shadow-md focus:outline-0 bg-black/40 dark:text-gray-400"
 							/>
 						</div>
-						<Slide direction="up">
+						<Slide
+							direction="up"
+							triggerOnce
+						>
 							<div className="flex justify-end mt-3">
 								{/* <input
 									type="submit"

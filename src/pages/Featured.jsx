@@ -49,7 +49,7 @@ const Featured = () => {
 									key={item.id}
 									className="flex flex-col overflow-hidden border rounded-sm shadow-md group bg-black/20 border-gray-900/10 dark:border-white/10"
 								>
-									<div className="relative w-full h-56 overflow-hidden rounded-sm cursor-pointer">
+									<div className="relative w-full h-64 overflow-hidden rounded-sm cursor-pointer md:h-72 xl:h-56">
 										<div className="absolute inset-0 duration-300 rounded-sm opacity-0 backdrop-blur-sm bg-black/50 group-hover:opacity-100">
 											<a
 												href={item.link}
@@ -63,7 +63,7 @@ const Featured = () => {
 										<img
 											src={item.image}
 											alt={item.name}
-											className="object-cover rounded-sm"
+											className="object-cover w-full h-full rounded-sm"
 										/>
 									</div>
 									<div className="relative p-2">

@@ -101,6 +101,7 @@ html:before {
 .wavy-background-dark {
 	background-color: #111111;
 	opacity: 0.8;
+	/* color: hwb(0 17% 91% / 0.5); */
 	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #111111 10px),
 		repeating-linear-gradient(#111111, hwb(0 17% 89%));
 }

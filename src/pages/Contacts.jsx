@@ -33,7 +33,7 @@ const Contacts = () => {
 		};
 
 		try {
-			const response = await fetch("http://localhost:3000/all_mails", {
+			const response = await fetch("https://mail-backend-16j7viix1-mksaadis-projects.vercel.app/all_mails", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

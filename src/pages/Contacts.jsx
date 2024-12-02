@@ -1,65 +1,73 @@
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
 import { Forward } from "lucide-react";
+import { useRef, useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useToast } from "react-toast-master";
 
 const Contacts = () => {
-	const form = useRef();
+	const form = useRef(null);
 	const { toastMaster } = useToast();
+	const [isSending, setIsSending] = useState(false);
 
-	const sendEmail = (e) => {
+	const sendEmail = async (e) => {
 		e.preventDefault();
-		console.log(form);
 
-		// emailjs
-		// 	.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, {
-		// 		publicKey: import.meta.env.VITE_ID,
-		// 	})
-		// 	.then(
-		// 		() => {
-		// 			toastMaster({
-		// 				type: "successDark",
-		// 				message: "Email sent successfully",
-		// 			});
-		// 		},
-		// 		(error) => {
-		// 			toastMaster({
-		// 				type: "errorDark",
-		// 				message: "Error sending email",
-		// 			});
-		// 		}
-		// 	);
+		toastMaster({
+			type: "loadingDark",
+			message: "Sending email...",
+			bg: "white",
+			position: "bottomLeft",
+			transition: "top",
+		});
+		setIsSending(true);
+
+		const form = e.target;
+		const name = form.to_name.value;
+		const email = form.from_email.value;
+		const message = form.user_subject.value;
+		const subject = form.message.value;
+
+		const templateParams = {
+			to_name: name,
+			from_email: email,
+			user_subject: message,
+			message: subject,
+		};
+
+		try {
+			const response = await fetch("http://localhost:3000/all_mails", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(templateParams),
+			});
+
+			const data = await response.json();
+
+			if (data.acknowledged) {
+				toastMaster({
+					type: "successDark",
+					message: "Email sent successfully",
+					bg: "white",
+					position: "bottomLeft",
+					transition: "top",
+				});
+			} else {
+				throw new Error("Email not acknowledged");
+			}
+		} catch (error) {
+			toastMaster({
+				type: "errorDark",
+				message: "Error sending email",
+				footer: "Couldn't send email, please try again.",
+				bg: "white",
+				position: "bottomLeft",
+				transition: "top",
+			});
+		} finally {
+			setIsSending(false);
+		}
 	};
-
-	// emailjs
-	// 	.send(
-	// 		import.meta.env.VITE_SERVICE,
-	// 		import.meta.env.VITE_TEMPLATE,
-	// 		form.current,
-	// 		import.meta.env.VITE_ID
-	// 	)
-	// 	.then(
-	// 		(result) => {
-	// 			e.target.reset();
-	// 			toastMaster({
-	// 				type: "successDark",
-	// 				message: "Email sent successfully",
-	// 				bg: "white",
-	// 				position: "bottomLeft",
-	// 				transition: "top",
-	// 			});
-	// 		},
-	// 		(error) => {
-	// 			toastMaster({
-	// 				type: "errorDark",
-	// 				message: "Error sending email",
-	// 				bg: "white",
-	// 				position: "bottomLeft",
-	// 				transition: "top",
-	// 			});
-	// 		}
-	// 	);
 
 	return (
 		<div>
@@ -119,17 +127,19 @@ const Contacts = () => {
 							triggerOnce
 						>
 							<div className="flex justify-end mt-3">
-								<input
+								<button
 									type="submit"
-									value="Send"
-									className="flex items-center justify-center px-6 py-2 font-sans text-lg font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md cursor-pointer hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
-								/>
-								{/* <button
-									type="submit"
-									className="flex items-center justify-center px-6 py-2 font-sans text-lg font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md cursor-pointer hover:bg-red-600 dark:hover:bg-red-600 whitespace-nowrap gap-x-2 focus:outline-0 dark:border-white/20 bg-dhusor dark:bg-gray-950"
+									className={`flex items-center justify-center px-6 dark:border-white/20 py-2 font-sans text-lg font-medium text-white duration-300 border-t border-gray-900 rounded-sm shadow-md cursor-pointer whitespace-nowrap gap-x-2 focus:outline-0 
+									${
+										isSending
+											? "bg-dhusor dark:bg-gray-600 cursor-not-allowed"
+											: "bg-dhusor dark:bg-gray-950 hover:bg-red-600 dark:hover:bg-red-600"
+									}
+										`}
+									disabled={isSending}
 								>
 									<Forward /> Send
-								</button> */}
+								</button>
 							</div>
 						</Slide>
 					</form>

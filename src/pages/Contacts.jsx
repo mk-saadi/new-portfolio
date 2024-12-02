@@ -1,10 +1,9 @@
 import { Forward } from "lucide-react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useToast } from "react-toast-master";
 
 const Contacts = () => {
-	const form = useRef(null);
 	const { toastMaster } = useToast();
 	const [isSending, setIsSending] = useState(false);
 
@@ -86,7 +85,6 @@ const Contacts = () => {
 					triggerOnce
 				>
 					<form
-						ref={form}
 						onSubmit={sendEmail}
 						className="flex flex-col justify-start gap-y-2 text-para dark:text-gray-400"
 					>

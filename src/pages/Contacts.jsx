@@ -30,10 +30,14 @@ const Contacts = () => {
 			from_email: email,
 			user_subject: message,
 			message: subject,
+			createdAt: new Date().toLocaleString("en-US", {
+				timeZone: "Asia/Dhaka",
+				hour12: false,
+			}),
 		};
 
 		try {
-			const response = await fetch("https://mail-backend-16j7viix1-mksaadis-projects.vercel.app/all_mails", {
+			const response = await fetch(`${import.meta.env.VITE_URL}/all_mails`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
